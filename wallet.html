@@ -55,32 +55,31 @@
       </nav>
     </header>
     <main>
-      <section class="account">
-        <div class="account__wrapper">
+      <section class="wallet">
+        <div class="wallet__wrapper">
           <img
-            class="account__img"
+            class="wallet__img"
             src="images/account-page/spaceship-for-sky-background.jpg"
             alt="spaceship"
             width="610"
             height="691"
           />
-          <div class="account__container">
-            <h2 class="account__title">create account</h2>
-            <p class="account__subtitle">
-              welcome! enter your details and start creating, collecting and
-              selling n<span class="uppercase">ft</span>s.
+          <div class="wallet__container">
+            <h2 class="wallet__title">connect wallet</h2>
+            <p class="wallet__subtitle">
+              Choose a wallet you want to connect. There are several wallet providers.
             </p>
-            <form>
-              <input type="text" name="username" placeholder="username" />
-              <input type="text" name="email" placeholder="email address" />
-              <input type="password" name="password" placeholder="password" />
-              <input
-                type="password"
-                name="password"
-                placeholder="confirm password"
-              />
-              <button type="button">create account</button>
-            </form>
+            <ul class="wallet__buttons">
+              <li class="wallet__button">
+                <button class="wallet-btn" type="button">metamask</button>    
+              </li>
+              <li class="wallet__buttons">
+                <button class="wallet-btn" type="button">wallet connect</button>    
+              </li>
+              <li class="wallet__buttons">
+                <button class="wallet-btn" type="button">coinbase</button>    
+              </li>
+          </ul>
           </div>
         </div>
       </section>

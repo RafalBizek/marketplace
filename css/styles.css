@@ -18,7 +18,9 @@ ul {
 }
 body {
   font-family: var(--font-primary);
+  font-size: 16px;
   font-weight: 300;
+  line-height: 1.4;
   color: var(--text-color);
   background-color: var(--bg-color-primary);
 }
@@ -36,7 +38,7 @@ body {
 .uppercase {
   text-transform: uppercase;
 }
-/* nav */
+/*----------------------nav--------------------------*/
 .header {
   max-width: 1200px;
   margin: 0 auto;
@@ -64,9 +66,7 @@ body {
 }
 .nav__item {
   padding: 12px 20px 12px 20px;
-  font-size: 16px;
   font-weight: 600;
-  line-height: 1.4;
 }
 .nav__item:not(:last-child) {
   margin-right: 10px;
@@ -88,8 +88,8 @@ body {
 .nav__item:hover {
   cursor: pointer;
 }
-/* nav */
-/* hero */
+/*-----------------------------nav-------------------*/
+/*-----------------------------hero------------------*/
 .hero__wrapper {
   display: flex;
   /*padding-top: 80px;*/
@@ -112,9 +112,7 @@ body {
 .hero__btn {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 16px;
   font-weight: 600;
-  line-height: 1.4;
   text-transform: capitalize;
   background-color: var(--brand-color);
   border-radius: 20px;
@@ -122,11 +120,10 @@ body {
   display: inline-flex;
   align-items: center;
   margin-bottom: 30px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__icon {
   margin-right: 12px;
+  fill: var(--text-color);
 }
 .hero__items {
   display: flex;
@@ -142,7 +139,6 @@ body {
   font-family: var(--font-secondary);
   font-size: 28px;
   font-weight: 700;
-  line-height: 1.4;
 }
 .hero__info {
   font-size: 24px;
@@ -160,7 +156,6 @@ body {
 .hero__card-title {
   font-size: 22px;
   font-weight: 600;
-  line-height: 1.4;
   text-transform: capitalize;
   padding: 22px 20px 10px 20px;
 }
@@ -173,15 +168,11 @@ body {
   border-radius: 120px;
   margin-right: 12px;
 }
-.hero__nickname {
-  font-size: 16px;
-  line-height: 1.4;
-}
 .hero__nickname::first-letter {
   text-transform: uppercase;
 }
-/* hero */
-/* trending */
+/*---------------------------hero--------------------*/
+/*---------------------------trending-----------------*/
 .trending__title {
   font-size: 38px;
   line-height: 1.2;
@@ -224,7 +215,6 @@ body {
 .trending__collection {
   font-size: 22px;
   font-weight: 600;
-  line-height: 1.4;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
@@ -232,15 +222,13 @@ body {
   display: flex;
 }
 .trending__caption {
-  font-size: 16px;
-  line-height: 1.4;
   margin-left: 12px;
 }
 .trending__caption:first-letter {
   text-transform: uppercase;
 }
-/* trending */
-/*creators*/
+/*----------------------trending---------------------*/
+/*------------------creators-------------------------*/
 .creators__wrapper {
   display: flex;
   align-items: flex-end;
@@ -262,9 +250,7 @@ body {
 .creators__btn {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 16px;
   font-weight: 600;
-  line-height: 1.4;
   text-transform: capitalize;
   border: 2px solid var(--brand-color);
   border-radius: 20px;
@@ -273,10 +259,10 @@ body {
   position: absolute;
   right: 0;
   bottom: 60px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .creators__icon {
   margin-right: 12px;
+  fill: var(--brand-color);
 }
 .creators__cards {
   display: flex;
@@ -293,11 +279,13 @@ body {
   border-radius: 20px;
   position: relative;
 }
+.creators__link {
+  text-decoration: none;
+  color: var(--text-color);
+}
 .creators__number {
   color: var(--caption-color);
   font-family: var(--font-secondary);
-  font-size: 16px;
-  line-height: 1.4;
   padding: 4px 10px;
   background-color: var(--bg-color-primary);
   border-radius: 50px;
@@ -308,7 +296,7 @@ body {
 .creators__card:nth-child(10) .creators__number,
 .creators__card:nth-child(11) .creators__number,
 .creators__card:nth-child(12) .creators__number {
-  padding: 8px 10px;
+  padding: 4px 6px;
 }
 .creators__img {
   border-radius: 60px;
@@ -320,15 +308,12 @@ body {
 .creators__nickname {
   font-size: 22px;
   font-weight: 600;
-  line-height: 1.4;
   margin-bottom: 5px;
 }
 .creators__nickname:first-letter {
   text-transform: uppercase;
 }
 .creators__sales {
-  font-size: 16px;
-  line-height: 1.4;
   color: var(--caption-color);
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -336,12 +321,10 @@ body {
 .creators__price {
   color: var(--text-color);
   font-family: var(--font-secondary);
-  font-size: 16px;
-  line-height: 1.4;
   text-transform: uppercase;
   margin-left: 10px;
 }
-/*creators*/
+/*----------------creators---------------------------*/
 /*---------------categories--------------------------*/
 .categories__title {
   text-transform: capitalize;
@@ -386,7 +369,6 @@ body {
 .categories__subtitle {
   font-size: 22px;
   font-weight: 600;
-  line-height: 1.4;
   text-transform: capitalize;
   padding: 20px 30px 25px 30px;
   background-color: var(--bg-color-secondary);
@@ -416,8 +398,6 @@ body {
   text-decoration: none;
   color: var(--text-color);
   text-transform: capitalize;
-  font-size: 16px;
-  line-height: 1.4;
   border: 2px solid var(--brand-color);
   border-radius: 20px;
   display: flex;
@@ -429,62 +409,75 @@ body {
 .discover__icon {
   margin-right: 12px;
 }
-.discover__cards {
+.discover__cards,
+.cards-animakid__items {
   display: flex;
   --space-gap: 50px;
   gap: var(--space-gap);
   max-width: 330px;
 }
-.discover__card {
+.cards-animakid__items {
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+.discover__card,
+.card-animakid__item {
   flex-basis: calc((100% - 2 * var(--space-gap)) / 3);
 }
-.discover__img {
+.discover__img,
+.card-animakid__img {
   border-radius: 21px 21px 0 0;
   display: block;
 }
-.discover__info-artist {
+.discover__info-artist,
+.card-animakid__info-artist {
   padding: 20px 30px 0 30px;
 }
-.discover__title {
+.discover__title,
+.card-animakid__title {
   font-size: 22px;
   font-weight: 600;
-  line-height: 1.4;
   text-transform: capitalize;
   margin-bottom: 5px;
 }
-.discover__info {
+.discover__info,
+.card-animakid__info {
   background-color: var(--bg-color-secondary);
   border-radius: 0 0 20px 20px;
 }
-.discover__avatar {
+.discover__avatar,
+.card-animakid__avatar {
   display: flex;
 }
-.discover__img--avatar {
+.discover__img--avatar,
+.card-animakid__img--avatar {
   border-radius: 50px;
   margin-right: 12px;
 }
-.discover__nickname {
-  font-size: 16px;
-  line-height: 1.4;
-}
-.discover__nickname::first-letter {
+.discover__nickname::first-letter,
+.card-animakid__nickname::first-letter {
   text-transform: uppercase;
 }
-.discover__info-additional {
+.discover__info-additional,
+.card-animakid__info-additional {
   display: flex;
   justify-content: space-between;
   padding: 25px 30px;
 }
-.discover__price {
+.discover__price,
+.card-animakid__price {
   display: flex;
   flex-direction: column;
 }
-.discover__bid {
+.discover__bid,
+.card-animakid__bid {
   display: flex;
   flex-direction: column;
 }
 .discover__price .discover__top,
-.discover__bid .discover__top {
+.discover__bid .discover__top,
+.card-animakid__price .card-animakid__top,
+.card-animakid__bid .card-animakid__top {
   font-family: var(--font-secondary);
   font-size: 12px;
   line-height: 1.1;
@@ -493,10 +486,10 @@ body {
   margin-bottom: 8px;
 }
 .discover__price .discover__bottom,
-.discover__bid .discover__bottom {
+.discover__bid .discover__bottom,
+.card-animakid__price .card-animakid__bottom,
+.card-animakid__bid .card-animakid__bottom {
   font-family: var(--font-secondary);
-  font-size: 16px;
-  line-height: 1.4;
   text-transform: uppercase;
 }
 /*---------------discover--------------------------*/
@@ -532,10 +525,6 @@ body {
   border-radius: 50px;
   margin-right: 12px;
 }
-.nft__nickname {
-  font-size: 16px;
-  line-height: 1.4;
-}
 .nft__nickname::first-letter {
   text-transform: uppercase;
 }
@@ -549,9 +538,7 @@ body {
   text-decoration: none;
   color: var(--bg-color-primary);
   background-color: var(--text-color);
-  font-size: 16px;
   font-weight: 600;
-  line-height: 1.4;
   border-radius: 20px;
   padding: 20px 50px;
   display: inline-flex;
@@ -640,13 +627,10 @@ body {
 .works__title-detail {
   font-size: 22px;
   font-weight: 600;
-  line-height: 1.4;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
 .works__text {
-  font-size: 16px;
-  line-height: 1.4;
   margin: 0 30px 30px 30px;
 }
 /*---------------works-------------------------*/
@@ -710,8 +694,6 @@ body {
   margin-right: 12px;
 }
 .footer__text {
-  font-size: 16px;
-  line-height: 1.4;
   color: var(--color-footer-text);
   margin-top: 30px;
   margin-bottom: 20px;
@@ -737,8 +719,6 @@ body {
 .footer__link-menu {
   text-decoration: none;
   color: var(--color-footer-text);
-  font-size: 16px;
-  line-height: 1.4;
 }
 .footer__caption {
   --color-top-border: #858584;
@@ -750,20 +730,24 @@ body {
   padding-bottom: 40px;
 }
 /*---------------footer-----------------------*/
-/*---------------account-page-----------------*/
+/*---------------account-page--and-wallet--------------*/
 .account,
-.footer__account {
+.footer__account,
+.wallet {
   max-width: 1260px;
   margin: 0 auto;
 }
-.account__wrapper {
+.account__wrapper,
+.wallet__wrapper {
   display: flex;
 }
-.account__img {
+.account__img,
+.wallet__img {
   display: block;
   margin-right: 60px;
 }
-.account__title {
+.account__title,
+.wallet__title {
   font-size: 51px;
   font-weight: 600;
   line-height: 1.1;
@@ -771,7 +755,8 @@ body {
   margin-bottom: 20px;
   padding-top: 100px;
 }
-.account__subtitle {
+.account__subtitle,
+.wallet__subtitle {
   font-size: 22px;
   line-height: 1.6;
   text-transform: capitalize;
@@ -786,3 +771,146 @@ body {
   padding-top: 40px;
 }
 /*---------------account-page-----------------*/
+/*---------------animakid-page-----------------*/
+
+/*---------------animakid-page--------------------------*/
+/*----------------cover-section---------------------*/
+.cover__artist {
+  position: relative;
+  padding: 40px 0;
+}
+.cover__title {
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.cover__items-stats {
+  display: flex;
+  margin-bottom: 30px;
+}
+.cover__item-stats {
+  font-family: var(--font-secondary);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+}
+.cover__item-stats:not(:last-child) {
+  margin-right: 20px;
+}
+.cover__item-sale {
+  font-family: var(--font-primary);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: capitalize;
+  padding-right: 40px;
+}
+.cover__item-bio--title,
+.cover__title-link {
+  font-family: var(--font-secondary);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--caption-color);
+  margin-bottom: 10px;
+}
+.cover__item-bio--title:first-letter,
+.cover__title-link:first-letter {
+  text-transform: uppercase;
+}
+.cover__item-bio--subtitle {
+  font-size: 22px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.cover__items-link {
+  display: flex;
+}
+.cover__items-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+}
+/*----------------cover-section---------------------*/
+/*----------------tabs-section---------------------*/
+.tabs__items {
+  border-top: 1px solid var(--bg-color-secondary);
+  display: flex;
+  padding-top: 10px;
+}
+.tabs__item {
+  display: flex;
+  align-items: center;
+  padding: 14.5px 99px 14.5px 125px;
+  position: relative;
+}
+.tabs__item::after {
+  content: '';
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.tabs__title {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-right: 16px;
+}
+.tabs__title:first-letter {
+  text-transform: uppercase;
+}
+.tabs__number {
+  background-color: var(--caption-color);
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+}
+/*----------------tabs-section---------------------*/
+/*-----------------cover--------------------------*/
+.cover {
+  
+}
+.cover__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-image: linear-gradient(180deg, rgba(151, 71, 255, 0) 21.88%, #9747FF 95.31%),  url("../creators/images/building-tower-among-the-hills.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 160px 0;
+  margin-bottom: 50px;
+  position: relative;
+}
+.cover__avatar {
+  border-radius: 20px;
+  position: absolute;
+  left: 115px;
+  top: 250px;
+}
+.cover__artist {
+  padding-top: 40px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+/*-----------------cover--------------------------*/
+/*-----------------cards animakid---------------------*/
+.cards-animakid {
+  background-color: var(--bg-color-secondary);
+}
+.cards-animakid__items {
+  padding: 80px 0 80px 0;
+}
+.card-animakid__info {
+  background-color: var(--bg-color-primary);
+}
+.footer__items--creators {
+  padding-top: 40px;
+}
+/*-----------------cards animakid---------------------*/

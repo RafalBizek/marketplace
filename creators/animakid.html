@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="../index.html" class="nav__logo">
+          <svg class="nav__icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-storefront"></use>
+          </svg>
+          <span class="uppercase">ntf m</span>arketplace</a
+        >
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a class="nav__link" href="">marketplace</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">rankings</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="wallet.html"
+              >connect <span class="lowercase">a w</span>allet</a
+            >
+          </li>
+          <li class="nav__item nav__item--btn">
+            <a class="nav__link" href="account.html">
+              <svg class="nav__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              sign up
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+     <section class="cover">  
+      <div class="cover__wrapper">
+          <img class="cover__avatar" src="images/avatar-animakid.jpg" alt="avatar" width="120" height="120">
+      </div> 
+      <div class="cover__artist">
+          <div class="cover__artist--info">
+            <h2 class="cover__title">animakid</h2>
+            <ul class="cover__items-stats">
+              <li class="cover__item-stats">
+              250k+
+              <span class="cover__item-sale">volume</span>
+            </li>
+              <li class="cover__item-stats">
+              50+
+              <span class="cover__item-sale">n<span class="uppercase">ft</span>s sold</span>
+            </li>
+              <li class="cover__item-stats">
+              3000+
+              <span class="cover__item-sale">followers</span>
+            </li>
+            </ul>
+            <ul class="cover__items-bio">
+              <li class="cover__item-bio">
+                <h5 class="cover__item-bio--title">bio</h5>
+              </li>
+              <li class="cover__item-bio--subtitle">the internet's friendliest designer kid.</li>
+            </ul>
+            <h5 class="cover__title-link">links</h5>
+            <ul class="cover__items-link">
+              <li class="cover__items-link">
+                <a href="#" target="_blank" class="cover__items-link--social">
+                  <svg class="cover__icon" width="32" height="32">
+                    <use href="./creators/images/icons.svg#icon-discord"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="cover__items-link">
+                <a href="#" target="_blank" class="cover__items-link--social">
+                  <svg class="cover__icon" width="32" height="32">
+                    <use href="./creators/images/icons.svg#icon-discord"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="cover__items-link">
+                <a href="#" target="_blank" class="cover__items-link--social">
+                  <svg class="cover__icon" width="32" height="32">
+                    <use href="./creators/images/icons.svg#icon-discord"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="cover__items-link">
+                <a href="#" target="_blank" class="cover__items-link--social">
+                  <svg class="cover__icon" width="32" height="32">
+                    <use href="./creators/images/icons.svg#icon-discord"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="cover__items-link">
+                <a href="#" target="_blank" class="cover__items-link--social">
+                  <svg class="cover__icon" width="32" height="32">
+                    <use href="./creators/images/icons.svg#icon-discord"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="cover__items-btn">
+            <li class="cover__item-btn">
+              <button type="button" class="cover__btn">0xc0e3...b79c</button>
+            </li>
+            <li class="cover__item-btn">
+            <button type="button" class="cover__btn">+ follow</button>
+            </li>
+          </ul>
+      </div>      
+     </section>
+     <section class="tabs">
+       <div class="container">
+         <ul class="tabs__items">
+           <li class="tabs__item">
+             <h5 class="tabs__title">created</h5> <span class="tabs__number">302</span>
+           </li>
+           <li class="tabs__item">
+             <h5 class="tabs__title">owned</h5> <span class="tabs__number">67</span>
+           </li>
+           <li class="tabs__item">
+             <h5 class="tabs__title">collection</h5> <span class="tabs__number">4</span>
+           </li>
+         </ul>
+       </div>
+     </section>
+     <section class="cards-animakid">
+       <div class="container">
+         <ul class="cards-animakid__items">
+           <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/weird-starship.jpg" alt="starship" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/child-for-background-blue-sky.jpg" alt="child" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/astronaut-in-a-spacesuit.jpg" alt="astronaut" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/the-city-of-the-futures.jpg" alt="the city" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/colorful-dog.jpg" alt="dog" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/planets-against-the-background-of-space.jpg" alt="planets" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/woman-on-the-background-of-the-meadow.jpg" alt="woman" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/colorful-robot.jpg" alt="robot" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-animakid__item">
+              <img class="card-animakid__img" src="images/monkey.jpg" alt="monkey" width="330" height="296">
+              <div class="card-animakid__info">
+                <div class="card-animakid__info-artist">
+                  <h5 class="card-animakid__title">distant galaxy</h5>
+                  <div class="card-animakid__avatar">
+                    <img class="card-animakid__img--avatar" src="images/animakid-avatar.jpg" alt="starship" width="24" height="24">
+                    <span class="card-animakid__nickname">animakid</span>
+                  </div>
+                </div>
+                <div class="card-animakid__info-additional">
+                  <div class="card-animakid__price">
+                    <span class="card-animakid__top">price</span>
+                    <span class="card-animakid__bottom">1.63 eth</span>
+                  </div>
+                  <div class="card-animakid__bid">
+                    <span class="card-animakid__top">highest bid</span>
+                    <span class="card-animakid__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+         </ul>
+       </div>
+     </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__items footer__items--creators">
+          <li class="footer__item">
+            <a class="footer__link-logo" href="index.html">
+              <svg class="footer__icon-logo" width="32" height="32">
+                <use href="./images/icons.svg#icon-storefrontfooter"></use>
+              </svg>
+              <p><span class="uppercase">nft</span> marketplace</p>
+            </a>
+            <p class="footer__text">
+              <span class="uppercase">nft</span> marketplace
+              <span class="uppercase">ui</span> created<br />
+              with Anima for Figma.
+            </p>
+            <p class="footer__text">join our community</p>
+            <ul class="footer__socials">
+              <li class="footer__social">
+                <a href="https://discord.com/" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-discord"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="https://youtube.com/" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="https://twitter.com/" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="https://instagram.com/" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h5 class="footer__title">explore</h5>
+            <ul class="footer__items-menu">
+              <li class="footer__item-menu">
+                <a class="footer__link-menu" href="#"
+                  ><span class="uppercase">m</span>arketplace</a
+                >
+              </li>
+              <li class="footer__item-menu">
+                <a class="footer__link-menu" href="#"
+                  ><span class="uppercase">r</span>ankings</a
+                >
+              </li>
+              <li class="footer__item-menu">
+                <a class="footer__link-menu" href="wallet.html"
+                  ><span class="uppercase">c</span>onnect a wallet</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h5 class="footer__title">join our weekly digest</h5>
+            <p class="footer__text">
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+            <form action="#" method="post">
+              <input
+                type="text"
+                name="email"
+                placeholder="enter your email here"
+              />
+              <button type="button">subscribe</button>
+            </form>
+          </li>
+        </ul>
+        <p class="footer__caption">
+          &#xa9; <span class="uppercase">nft</span>
+          <span class="uppercase">m</span>arket.
+          <span class="uppercase">u</span>se this template freely.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
