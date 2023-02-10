@@ -53,11 +53,18 @@
               </a>
             </li>
           </ul>
-          <button class="nav__btn" type="button">
+          <!-- mobile menu -->
+          <button
+            class="nav__btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
             <svg class="nav__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
           </button>
+          <!-- mobile menu -->
         </nav>
       </div>
     </header>
@@ -1115,194 +1122,196 @@
                 >explore new tranding <span class="uppercase">nft</span>s</span
               >
             </div>
-          <ul class="discover__cards">
-            <li class="discover__card">
-              <picture class="discover__image">
-                <source
-                  media="screen and
+            <ul class="discover__cards">
+              <li class="discover__card">
+                <picture class="discover__image">
+                  <source
+                    media="screen and
                 (max-width: 768px)"
-                  srcset="
-                    images/discover-more-section/weird-starship-mobile-1x.jpg,
-                    images/discover-more-section/weird-starship-mobile-2x.jpg 2x
-                  "
-                />
-                <source
-                  media="screen and
+                    srcset="
+                      images/discover-more-section/weird-starship-mobile-1x.jpg,
+                      images/discover-more-section/weird-starship-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
                 (max-width: 1200px)"
-                  srcset="
-                    images/discover-more-section/weird-starship-tablet-1x.jpg,
-                    images/discover-more-section/weird-starship-tablet-2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    images/discover-more-section/weird-starship-desktop-1x.jpg,
-                    images/discover-more-section/weird-starship-desktop-2x.jpg 2x
-                  "
-                />
-                <img
-                  class="discover__img"
-                  src="images/discover-more-section/weird-starship.jpg"
-                  alt="starship"
-                  width="330"
-                  height="296"
-                />
-              </picture>
+                    srcset="
+                      images/discover-more-section/weird-starship-tablet-1x.jpg,
+                      images/discover-more-section/weird-starship-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/discover-more-section/weird-starship-desktop-1x.jpg,
+                      images/discover-more-section/weird-starship-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="discover__img"
+                    src="images/discover-more-section/weird-starship.jpg"
+                    alt="starship"
+                    width="330"
+                    height="296"
+                  />
+                </picture>
 
-              <div class="discover__info">
-                <div class="discover__info-artist">
-                  <h5 class="discover__title">distant galaxy</h5>
-                  <div class="discover__avatar">
-                    <img
-                      class="discover__img--avatar"
-                      src="images/discover-more-section/moondancer-avatar.jpg"
-                      alt="starship"
-                      width="24"
-                      height="24"
-                    />
-                    <span class="discover__nickname"
-                      >moon<span class="uppercase">d</span>ancer</span
-                    >
+                <div class="discover__info">
+                  <div class="discover__info-artist">
+                    <h5 class="discover__title">distant galaxy</h5>
+                    <div class="discover__avatar">
+                      <img
+                        class="discover__img--avatar"
+                        src="images/discover-more-section/moondancer-avatar.jpg"
+                        alt="starship"
+                        width="24"
+                        height="24"
+                      />
+                      <span class="discover__nickname"
+                        >moon<span class="uppercase">d</span>ancer</span
+                      >
+                    </div>
+                  </div>
+                  <div class="discover__info-additional">
+                    <div class="discover__price">
+                      <span class="discover__top">price</span>
+                      <span class="discover__bottom">1.63 eth</span>
+                    </div>
+                    <div class="discover__bid">
+                      <span class="discover__top">highest bid</span>
+                      <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                    </div>
                   </div>
                 </div>
-                <div class="discover__info-additional">
-                  <div class="discover__price">
-                    <span class="discover__top">price</span>
-                    <span class="discover__bottom">1.63 eth</span>
-                  </div>
-                  <div class="discover__bid">
-                    <span class="discover__top">highest bid</span>
-                    <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="discover__card">
-              <picture class="discover__image">
-                <source
-                  media="screen and
+              </li>
+              <li class="discover__card">
+                <picture class="discover__image">
+                  <source
+                    media="screen and
                 (max-width: 768px)"
-                  srcset="
-                    images/discover-more-section/child-for-background-blue-sky-mobile-1x.jpg,
-                    images/discover-more-section/child-for-background-blue-sky-mobile-2x.jpg 2x
-                  "
-                />
-                <source
-                  media="screen and
+                    srcset="
+                      images/discover-more-section/child-for-background-blue-sky-mobile-1x.jpg,
+                      images/discover-more-section/child-for-background-blue-sky-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
                 (max-width: 1200px)"
-                  srcset="
-                    images/discover-more-section/child-for-background-blue-sky-tablet-1x.jpg,
-                    images/discover-more-section/child-for-background-blue-sky-tablet-2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    images/discover-more-section/child-for-background-blue-sky-desktop-1x.jpg,
-                    images/discover-more-section/child-for-background-blue-sky-desktop-2x.jpg 2x
-                  "
-                />
-                <img
-                  class="discover__img"
-                  src="images/discover-more-section/child-for-background-blue-sky.jpg"
-                  alt="child"
-                  width="330"
-                  height="296"
-                />
-              </picture>
+                    srcset="
+                      images/discover-more-section/child-for-background-blue-sky-tablet-1x.jpg,
+                      images/discover-more-section/child-for-background-blue-sky-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/discover-more-section/child-for-background-blue-sky-desktop-1x.jpg,
+                      images/discover-more-section/child-for-background-blue-sky-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="discover__img"
+                    src="images/discover-more-section/child-for-background-blue-sky.jpg"
+                    alt="child"
+                    width="330"
+                    height="296"
+                  />
+                </picture>
 
-              <div class="discover__info">
-                <div class="discover__info-artist">
-                  <h5 class="discover__title">life on edena</h5>
-                  <div class="discover__avatar">
-                    <img
-                      class="discover__img--avatar"
-                      src="images/discover-more-section/nebulakid-avatar.jpg"
-                      alt="EbulaKid"
-                      width="24"
-                      height="24"
-                    />
-                    <span class="discover__nickname">nebula<span class="uppercase">k</span>id</span>
+                <div class="discover__info">
+                  <div class="discover__info-artist">
+                    <h5 class="discover__title">life on edena</h5>
+                    <div class="discover__avatar">
+                      <img
+                        class="discover__img--avatar"
+                        src="images/discover-more-section/nebulakid-avatar.jpg"
+                        alt="EbulaKid"
+                        width="24"
+                        height="24"
+                      />
+                      <span class="discover__nickname"
+                        >nebula<span class="uppercase">k</span>id</span
+                      >
+                    </div>
+                  </div>
+                  <div class="discover__info-additional">
+                    <div class="discover__price">
+                      <span class="discover__top">price</span>
+                      <span class="discover__bottom">1.63 eth</span>
+                    </div>
+                    <div class="discover__bid">
+                      <span class="discover__top">highest bid</span>
+                      <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                    </div>
                   </div>
                 </div>
-                <div class="discover__info-additional">
-                  <div class="discover__price">
-                    <span class="discover__top">price</span>
-                    <span class="discover__bottom">1.63 eth</span>
-                  </div>
-                  <div class="discover__bid">
-                    <span class="discover__top">highest bid</span>
-                    <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="discover__card">
-              <picture class="discover__image">
-                <source
-                  media="screen and
+              </li>
+              <li class="discover__card">
+                <picture class="discover__image">
+                  <source
+                    media="screen and
                 (max-width: 768px)"
-                  srcset="
-                    images/discover-more-section/astronaut-in-a-spacesuit-mobile-1x.jpg,
-                    images/discover-more-section/astronaut-in-a-spacesuit-mobile-2x.jpg 2x
-                  "
-                />
-                <source
-                  media="screen and
+                    srcset="
+                      images/discover-more-section/astronaut-in-a-spacesuit-mobile-1x.jpg,
+                      images/discover-more-section/astronaut-in-a-spacesuit-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
                 (max-width: 1200px)"
-                  srcset="
-                    images/discover-more-section/astronaut-in-a-spacesuit-tablet-1x.jpg,
-                    images/discover-more-section/astronaut-in-a-spacesuit-tablet-2x.jpg 2x
-                  "
-                />
-                <source
-                  srcset="
-                    images/discover-more-section/astronaut-in-a-spacesuit-desktop-1x.jpg,
-                    images/discover-more-section/astronaut-in-a-spacesuit-desktop-2x.jpg 2x
-                  "
-                />
-                <img
-                  class="discover__img"
-                  src="images/discover-more-section/astronaut-in-a-spacesuit.jpg"
-                  alt="astronaut"
-                  width="330"
-                  height="296"
-                />
-              </picture>
+                    srcset="
+                      images/discover-more-section/astronaut-in-a-spacesuit-tablet-1x.jpg,
+                      images/discover-more-section/astronaut-in-a-spacesuit-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/discover-more-section/astronaut-in-a-spacesuit-desktop-1x.jpg,
+                      images/discover-more-section/astronaut-in-a-spacesuit-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="discover__img"
+                    src="images/discover-more-section/astronaut-in-a-spacesuit.jpg"
+                    alt="astronaut"
+                    width="330"
+                    height="296"
+                  />
+                </picture>
 
-              <div class="discover__info">
-                <div class="discover__info-artist">
-                  <h5 class="discover__title">astro<span class="uppercase">f</span>iction</h5>
-                  <div class="discover__avatar">
-                    <img
-                      class="discover__img--avatar"
-                      src="images/discover-more-section/spaceone-avatar.jpg"
-                      alt="Spaceone"
-                      width="24"
-                      height="24"
-                    />
-                    <span class="discover__nickname">spaceone</span>
+                <div class="discover__info">
+                  <div class="discover__info-artist">
+                    <h5 class="discover__title">astro<span class="uppercase">f</span>iction</h5>
+                    <div class="discover__avatar">
+                      <img
+                        class="discover__img--avatar"
+                        src="images/discover-more-section/spaceone-avatar.jpg"
+                        alt="Spaceone"
+                        width="24"
+                        height="24"
+                      />
+                      <span class="discover__nickname">spaceone</span>
+                    </div>
+                  </div>
+                  <div class="discover__info-additional">
+                    <div class="discover__price">
+                      <span class="discover__top">price</span>
+                      <span class="discover__bottom">1.63 eth</span>
+                    </div>
+                    <div class="discover__bid">
+                      <span class="discover__top">highest bid</span>
+                      <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
+                    </div>
                   </div>
                 </div>
-                <div class="discover__info-additional">
-                  <div class="discover__price">
-                    <span class="discover__top">price</span>
-                    <span class="discover__bottom">1.63 eth</span>
-                  </div>
-                  <div class="discover__bid">
-                    <span class="discover__top">highest bid</span>
-                    <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <a class="discover__btn" href="#">
-            <svg class="discover__icon" width="20" height="20">
-              <use href="./images/icons.svg#icon-eye"></use>
-            </svg>
-            see all</a
-          >
-        </div>
+              </li>
+            </ul>
+            <a class="discover__btn" href="#">
+              <svg class="discover__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-eye"></use>
+              </svg>
+              see all</a
+            >
+          </div>
         </div>
       </section>
       <section class="nft">
@@ -1394,8 +1403,8 @@
                 </li>
                 <li class="works__detail">
                   <p class="works__text">
-                    Set up your wallet of choice.
-                    Connect it to the Animarket by clicking the wallet icon in the top right corner.
+                    Set up your wallet of choice. Connect it to the Animarket by clicking the wallet
+                    icon in the top right corner.
                   </p>
                 </li>
               </ul>
@@ -1624,10 +1633,7 @@
           </li>
           <li class="footer__item">
             <h5 class="footer__title">join our weekly digest</h5>
-            <p class="footer__text">
-              Get exclusive promotions & updates
-              straight to your inbox.
-            </p>
+            <p class="footer__text">Get exclusive promotions & updates straight to your inbox.</p>
             <form class="footer__form" method="GET" name="subscribeForm">
               <input
                 class="footer__form-input"
@@ -1650,5 +1656,32 @@
         </p>
       </div>
     </footer>
+    <!-- mobile menu -->
+    <div class="mobile js-menu-container" id="mobile-menu">
+      <svg class="mobile__close-svg js-close-menu" width="40" height="40">
+        <use href="images/icons.svg#icon-close"></use>
+      </svg>
+      <nav class="mobile__nav">
+        <ul class="mobile__menu">
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="index.html">marketplace</a>
+          </li>
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#">rankings</a>
+          </li>
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#">connect a wallet</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
