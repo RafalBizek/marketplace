@@ -20,7 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -44,7 +44,7 @@
             >
           </li>
           <li class="nav__item nav__item--btn">
-            <a class="nav__link" href="account.html">
+            <a class="nav__link nav__link--btn" href="account.html">
               <svg class="nav__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
@@ -67,27 +67,71 @@
           <div class="account__container">
             <h2 class="account__title">create account</h2>
             <p class="account__subtitle">
-              welcome! enter your details and start creating, collecting and
-              selling n<span class="uppercase">ft</span>s.
+              welcome! enter your details and start creating, collecting and selling n<span
+                class="uppercase"
+                >ft</span
+              >s.
             </p>
-            <form>
-              <input type="text" name="username" placeholder="username" />
-              <input type="text" name="email" placeholder="email address" />
-              <input type="password" name="password" placeholder="password" />
-              <input
-                type="password"
-                name="password"
-                placeholder="confirm password"
-              />
-              <button type="button">create account</button>
+            <form method="GET" class="account__form" name="accountForm">
+              <ul class="account__items">
+                <li class="account__item">
+                  <svg class="account__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-user"></use>
+                  </svg>
+                  <input
+                    class="acconut__input"
+                    type="text"
+                    name="userName"
+                    placeholder="Username"
+                    required
+                  />
+                </li>
+                <li class="account__item">
+                  <svg class="account__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-envelopesimple"></use>
+                  </svg>
+                  <input
+                    class="acconut__input"
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </li>
+                <li class="account__item">
+                  <svg class="account__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-lockkey"></use>
+                  </svg>
+                  <input
+                    class="acconut__input"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />
+                </li>
+                <li class="account__item">
+                  <svg class="account__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-lockkey"></use>
+                  </svg>
+                  <input
+                    class="acconut__input"
+                    type="password"
+                    name="password"
+                    placeholder="Confirm Password"
+                    required
+                  />
+                </li>
+              </ul>
+              <button type="submit" class="account__btn">create account</button>
             </form>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer footer__account">
+    <footer class="footer footer--subpage">
       <div class="container">
-        <ul class="footer__items">
+        <ul class="footer__items footer__items--padding">
           <li class="footer__item">
             <a class="footer__link-logo" href="index.html">
               <svg class="footer__icon-logo" width="32" height="32">
@@ -136,14 +180,10 @@
             <h5 class="footer__title">explore</h5>
             <ul class="footer__items-menu">
               <li class="footer__item-menu">
-                <a class="footer__link-menu" href="#"
-                  ><span class="uppercase">m</span>arketplace</a
-                >
+                <a class="footer__link-menu" href="#"><span class="uppercase">m</span>arketplace</a>
               </li>
               <li class="footer__item-menu">
-                <a class="footer__link-menu" href="#"
-                  ><span class="uppercase">r</span>ankings</a
-                >
+                <a class="footer__link-menu" href="#"><span class="uppercase">r</span>ankings</a>
               </li>
               <li class="footer__item-menu">
                 <a class="footer__link-menu" href="wallet.html"
@@ -154,22 +194,22 @@
           </li>
           <li class="footer__item">
             <h5 class="footer__title">join our weekly digest</h5>
-            <p class="footer__text">
-              Get exclusive promotions & updates straight to your inbox.
-            </p>
-            <form action="#" method="post">
+            <p class="footer__text">Get exclusive promotions & updates straight to your inbox.</p>
+            <form class="footer__form" method="GET" name="subscribeForm">
               <input
-                type="text"
+                class="footer__form-input"
+                type="email"
                 name="email"
-                placeholder="enter your email here"
+                placeholder="Enter your email here"
               />
-              <button type="button">subscribe</button>
+              <button class="footer__form-btn" type="button">
+                <span class="uppercase">s</span>ubscribe
+              </button>
             </form>
           </li>
         </ul>
         <p class="footer__caption">
-          &#xa9; <span class="uppercase">nft</span>
-          <span class="uppercase">m</span>arket.
+          &#xa9; <span class="uppercase">nft</span> <span class="uppercase">m</span>arket.
           <span class="uppercase">u</span>se this template freely.
         </p>
       </div>

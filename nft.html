@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <svg class="nav__icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-storefrontfooter"></use>
+          </svg>
+          <span class="uppercase">ntf m</span>arketplace</a
+        >
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a class="nav__link" href="">marketplace</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">rankings</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="wallet.html"
+              >connect <span class="lowercase">a w</span>allet</a
+            >
+          </li>
+          <li class="nav__item nav__item--btn">
+            <a class="nav__link nav__link--btn" href="account.html">
+              <svg class="nav__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              sign up
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="banner">
+        <div class="container">
+          <img src="images/nft-page/flying-city.jpg" alt="flying city" width="1280" height="560" />
+        </div>
+      </div>
+      <section class="collection">
+        <div class="container">
+          <div class="collection__wrapper">
+            <ul class="collection__items">
+              <li class="collection__item">
+                <h2 class="collection__title">the orbitians</h2>
+              </li>
+              <li class="collection__item">
+                <p class="collection__date">
+                  minted on<time datetime="2022-09-30"> sep 30, 2022</time>
+                </p>
+              </li>
+              <li class="collection__item">
+                <h5 class="collection__subtitle">created by</h5>
+                <div class="collection__box">
+                  <img src="#" alt="avatar" width="" height="" class="collection__avatar" />
+                  <h5 class="collection__author">orbitian</h5>
+                </div>
+              </li>
+              <li class="collection__item">
+                <p class="collection__subtitle">description</p>
+                <p class="collection__description">
+                  The Orbitians <br />is a collection of 10,000 unique NFTs on the Ethereum
+                  blockchain.
+                </p>
+                <br /><br />
+                <p class="collection__description">
+                  There are all sorts of beings in the NFT Universe. The most advanced and friendly
+                  of the bunch are Orbitians.
+                </p>
+                <br /><br />
+                <p class="collection__description">
+                  They live in a metal space machines, high up in the sky and only have one foot on
+                  Earth. <br />These Orbitians are a peaceful race, but they have been at war with a
+                  group of invaders for many generations. The invaders are called Upside-Downs,
+                  because of their inverted bodies that live on the ground, yet do not know any
+                  other way to be. Upside-Downs believe that they will be able to win this war if
+                  they could only get an eye into Orbitian territory, so they've taken to make human
+                  beings their target.
+                </p>
+              </li>
+              <li class="collection__item">
+                <ul class="collection__details">
+                  <li class="collection__detail">
+                    <h5 class="collection__subtitle">details</h5>
+                  </li>
+                  <li class="collection__detail">
+                    <a href="#" class="collection__link">
+                      <!-- <svg class="collection__svg" widith="32" height="32">
+                        <use href="images/icons.svg#"></use>
+                      </svg> -->
+                      view <span class="lowercase">on</span> etherscan
+                    </a>
+                  </li>
+                  <li class="collection__detail">
+                    <a href="#" class="collection__link" widith="32" height="32">
+                      <!-- <svg class="collection__svg">
+                        <use href="images/icons.svg#"></use>
+                      </svg> -->
+                      view original
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="collection__item">
+                <h5 class="collection__subtitle">tags</h5>
+                <ul class="collection__tags">
+                  <li class="collection__tag">
+                    <a href="#" class="collection__button"> animation </a>
+                  </li>
+                  <li class="collection__tag">
+                    <a href="#" class="collection__button"> illustration </a>
+                  </li>
+                  <li class="collection__tag">
+                    <a href="#" class="collection__button"> moon </a>
+                  </li>
+                  <li class="collection__tag">
+                    <a href="#" class="collection__button"> moon </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="collection__auction">
+              <span class="collection__label">auction ends in:</span>
+              <ul class="collection__clocks">
+                <li class="collection__clock">
+                  <h3>59</h3>
+                  <!-- <span class="collection__a">hours</span> -->
+                </li>
+                <li class="collection__clock">
+                  <h4>:</h4>
+                </li>
+                <li class="collection__clock">
+                  <h3>59</h3>
+                  <!-- <span class="collection__a">hours</span> -->
+                </li>
+                <li class="collection__clock">
+                  <h4>:</h4>
+                </li>
+                <li class="collection__clock">
+                  <h3>59</h3>
+                  <!-- <span class="collection__a">hours</span> -->
+                </li>
+              </ul>
+              <ul class="collection__times">
+                <li class="collection__label collection__label--margin">hours</li>
+                <li class="collection__label collection__label--margin">minutes</li>
+                <li class="collection__label collection__label--margin">seconds</li>
+              </ul>
+              <a class="collection__button-auction" href="#">place bid</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="artist-work">
+        <div class="container">
+          <h2 class="artist-work__title">more from this artist</h2>
+          <a href="#"> go to artist page </a>
+          <ul class="artist-work__items">
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/fox-in-oculars.jpg"
+                alt="fox"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">foxy life</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/cat-in-goggles.jpg"
+                alt="cat"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">cat from future</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/colorful-dog-in-oculars.jpg"
+                alt="dog"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">psycho dog</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/bear-in-oculars-and-hat.jpg"
+                alt="bear"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">designer bear</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/dancing-robot-0375.jpg"
+                alt="robot 0375"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">dancing robot 0375</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/dancing-robot-0356.jpg"
+                alt="robot 0356"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">dancing robot 0356</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/dancing-robot-0321.jpg"
+                alt="robot 0321"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">dancing robot 0321</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/dancing-robot-0512.jpg"
+                alt="robot 0512"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">danicing robot 0512</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="artist-work__item">
+              <img
+                class="artist-work__img"
+                src="images/nft-page/dancing-robot-0024.jpg"
+                alt="robot 0024"
+                width="330"
+                height="296"
+              />
+              <div class="artist-work__info">
+                <div class="artist-work__info-artist">
+                  <h5 class="artist-work__subtitle">dancing robot 0024</h5>
+                  <div class="artist-work__avatar">
+                    <img
+                      class="artist-work__img--avatar"
+                      src="images/nft-page/orbitrian-avatar.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="artist-work__nickname">orbitrian</span>
+                  </div>
+                </div>
+                <div class="artist-work__info-additional">
+                  <div class="artist-work__price">
+                    <span class="artist-work__top">price</span>
+                    <span class="artist-work__bottom">1.63 eth</span>
+                  </div>
+                  <div class="artist-work__bid">
+                    <span class="artist-work__top">highest bid</span>
+                    <span class="artist-work__bottom"
+                      >0.33 <span class="lowercase">w</span>eth</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer--subpage">
+      <div class="container">
+        <ul class="footer__items footer__items--padding">
+          <li class="footer__item">
+            <a class="footer__link-logo" href="index.html">
+              <svg class="footer__icon-logo" width="32" height="32">
+                <use href="./images/icons.svg#icon-storefrontfooter"></use>
+              </svg>
+              <p><span class="uppercase">nft</span> marketplace</p>
+            </a>
+            <p class="footer__text">
+              <span class="uppercase">nft</span> marketplace
+              <span class="uppercase">ui</span> created<br />
+              with Anima for Figma.
+            </p>
+            <p class="footer__text">join our community</p>
+            <ul class="footer__socials">
+              <li class="footer__social">
+                <a href="https://discord.com/" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-discord"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="https://youtube.com/" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="https://twitter.com/" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="https://instagram.com/" target="_blank">
+                  <svg class="footer__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h5 class="footer__title">explore</h5>
+            <ul class="footer__items-menu">
+              <li class="footer__item-menu">
+                <a class="footer__link-menu" href="#"><span class="uppercase">m</span>arketplace</a>
+              </li>
+              <li class="footer__item-menu">
+                <a class="footer__link-menu" href="#"><span class="uppercase">r</span>ankings</a>
+              </li>
+              <li class="footer__item-menu">
+                <a class="footer__link-menu" href="wallet.html"
+                  ><span class="uppercase">c</span>onnect a wallet</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h5 class="footer__title">join our weekly digest</h5>
+            <p class="footer__text">Get exclusive promotions & updates straight to your inbox.</p>
+            <form class="footer__form" method="GET" name="subscribeForm">
+              <input
+                class="footer__form-input"
+                type="email"
+                name="email"
+                placeholder="Enter your email here"
+              />
+              <button class="footer__form-btn" type="button">
+                <span class="uppercase">s</span>ubscribe
+              </button>
+            </form>
+          </li>
+        </ul>
+        <p class="footer__caption">
+          &#xa9; <span class="uppercase">nft</span> <span class="uppercase">m</span>arket.
+          <span class="uppercase">u</span>se this template freely.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+.footer {
+  &__text {
+    color: $fontColorFooter;
+    margin-bottom: 20px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__socials {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__social {
+    margin-right: 10px;
+  }
+  &__icon {
+    fill: $footerIconColor;
+  }
+  &__title {
+    font-family: $fontSecondary;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__link-menu {
+    color: $fontColorFooter;
+  }
+  &__items-menu {
+    margin-bottom: 30px;
+  }
+  &__item-menu:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__form {
+    margin-bottom: 30px;
+  }
+  &__form-input {
+    padding: 16px 20px 16px 20px;
+    border-radius: 20px;
+    width: 315px;
+    height: 46px;
+    margin-bottom: 16px;
+  }
+  &__input::placeholder {
+    color: $bgBasicColor;
+  }
+  &__form-btn {
+    display: flex;
+    padding: 12px 102px 12px 102px;
+    border-radius: 20px;
+    background-color: $accentColor;
+    color: $fontColor;
+    border: none;
+    font-weight: 600;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+  &__icon-form {
+    fill: $fontColor;
+    margin-right: 12px;
+  }
+  &__caption {
+    font-size: 12px;
+    line-height: 1.1;
+    color: $fontColorFooter;
+    border-top: 1px solid $footerIconColor;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  @include tablet {
+    &__form {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 49px;
+    }
+    &__form-input {
+      padding: 19px 20px 19px 20px;
+      width: 420px;
+      height: 60px;
+      margin-bottom: 0;
+    }
+    &__icon-form {
+      display: none;
+    }
+    &__form-btn {
+      padding: 19px 50px 19px 50px;
+      border-radius: 20px;
+      position: absolute;
+      top: 2px;
+      left: 242px;
+    }
+  }
+}

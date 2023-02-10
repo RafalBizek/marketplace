@@ -1,0 +1,101 @@
+.discover {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    $spaceGap: 20px;
+    gap: $spaceGap;
+  }
+  &__title {
+    font-size: 22px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+  &__subtitle {
+    display: inline-block;
+    margin-bottom: 60px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__images,
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  &__img {
+    border-radius: 21px 21px 0 0;
+  }
+  &__info {
+    background-color: $bgAdditionalColor;
+    border-radius: 0 0 20px 20px;
+  }
+  &__info-artist {
+    padding: 20px 30px 0 30px;
+  }
+  &__avatar {
+    display: flex;
+  }
+  &__img--avatar {
+    border-radius: 50px;
+    margin-right: 12px;
+  }
+  &__nickname:first-letter {
+    text-transform: uppercase;
+  }
+  &__info-additional {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+  }
+  &__price,
+  &__bid {
+    display: flex;
+    flex-direction: column;
+  }
+  &__price &__top,
+  &__bid &__top {
+    font-family: $fontSecondary;
+    font-size: 12px;
+    line-height: 1.1;
+    text-transform: capitalize;
+    color: $fontCaptionColor;
+    margin-bottom: 8px;
+  }
+  &__price &__bottom,
+  &__bid &__bottom {
+    font-family: $fontSecondary;
+    text-transform: uppercase;
+  }
+  &__btn {
+    color: $fontColor;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 20px;
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $accentColor;
+    padding: 20px 50px;
+    margin-top: 40px;
+  }
+  &__icon {
+    margin-right: 12px;
+  }
+  @include tablet {
+    &__wrapper {
+      position: relative;
+    }
+    &__card:nth-child(3) {
+      display: none;
+    }
+    &__btn {
+      display: inline-flex;
+      position: absolute;
+      top: -40px;
+      right: 15px;
+    }
+  }
+}

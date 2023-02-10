@@ -1,0 +1,58 @@
+.works {
+  &__title {
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    background-color: $bgAdditionalColor;
+    border-radius: 20px;
+  }
+  &__image, &__img {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  &__details {
+    padding: 20px;
+  }
+  &__title-detail {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 12px;
+  }
+  @include tablet {
+    &__cards {
+      flex-direction: row;
+      column-gap: 30px;
+      align-items: flex-start;
+    }
+    &__card {
+      flex-direction: column;
+      max-width: 210px;
+    }
+    &__image, &__img {
+      width: 160px;
+      height: 160px;
+    }
+    &__details {
+      text-align: center;
+    }
+  }
+}

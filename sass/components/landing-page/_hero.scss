@@ -1,0 +1,107 @@
+.hero {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__container {
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px 24px 0 0;
+    display: block;
+  }
+  &__card-caption {
+    background-color: $bgAdditionalColor;
+    border-radius: 0 0 20px 20px;
+  }
+  &__card-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 22px 20px 10px 20px;
+  }
+  &__avatar {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 24px 20px;
+  }
+  &__img-avatar {
+    border-radius: 120px;
+    margin-right: 12px;
+  }
+  &__nickname:first-letter {
+    text-transform: uppercase;
+  }
+  &__btn {
+    background-color: $accentColor;
+    color: $fontColor;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 20px;
+    padding: 19px 95.5px 19px 127.5px;
+    margin-bottom: 30px;
+    display: flex;
+  }
+  &__icon {
+    fill: $fontColor;
+    margin-right: 12px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__number {
+    font-family: $fontSecondary;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__info {
+    font-size: 16px;
+    line-height: 1.59;
+    text-transform: capitalize;
+  }
+  @include tablet {
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__container--left {
+      max-width: 330px;
+      margin-right: 20px;
+    }
+    &__container--right {
+      display: flex;
+    }
+    &__container--bottom {
+      margin-top: -180px;
+    }
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+    &__btn {
+      padding: 19px 50px 19px 82px;
+      margin-bottom: 20px;
+    }
+  }
+}

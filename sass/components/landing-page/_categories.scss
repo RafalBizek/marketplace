@@ -1,0 +1,60 @@
+.categories {
+  &__title {
+    font-size: 28px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+  }
+  &__image,
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  &__img {
+    border-radius: 22px 22px 0 0;
+  }
+  &__cards {
+    $spaceGap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spaceGap;
+  }
+  &__card {
+    position: relative;
+  }
+  &__card::after {
+    content: '';
+    width: 149px;
+    height: 142px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7.5px);
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 31px;
+    left: 34px;
+    z-index: 1;
+  }
+  &__subtitle {
+    font-weight: 600;
+    padding: 20px 20px 20px 20px;
+    background-color: $bgAdditionalColor;
+    border-radius: 0 0 20px 20px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  @include tablet {
+    &__card::after {
+      width: 151px;
+    }
+  }
+}

@@ -20,77 +20,128 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a href="index.html" class="nav__logo">
-          <svg class="nav__icon" width="32" height="32">
-            <use href="./images/icons.svg#icon-storefront"></use>
-          </svg>
-          <span class="uppercase">ntf m</span>arketplace</a
-        >
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a class="nav__link" href="">marketplace</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">rankings</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="wallet.html"
-              >connect <span class="lowercase">a w</span>allet</a
-            >
-          </li>
-          <li class="nav__item nav__item--btn">
-            <a class="nav__link" href="account.html">
-              <svg class="nav__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-user"></use>
-              </svg>
-              sign up
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav__logo">
+            <svg class="nav__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-storefront"></use>
+            </svg>
+            <span class="uppercase">ntf m</span>arketplace</a
+          >
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="">marketplace</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">rankings</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="wallet.html"
+                >connect <span class="lowercase">a w</span>allet</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--btn" href="account.html">
+                <svg class="nav__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+                sign up
+              </a>
+            </li>
+          </ul>
+          <button class="nav__btn" type="button">
+            <svg class="nav__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero section">
         <div class="container">
           <div class="hero__wrapper">
-            <div class="hero__container">
+            <div class="hero__container hero__container--left">
               <h1 class="hero__title">
-                discover<br />
-                digital art & collect n<span class="uppercase">ft</span>s
+                discover digital art & collect n<span class="uppercase">ft</span>s
               </h1>
               <p class="hero__subtitle">
-                nft m<span class="lowercase">arketplace</span> ui c<span
-                  class="lowercase"
+                nft m<span class="lowercase">arketplace</span> ui c<span class="lowercase"
                   >reated</span
                 >
-                w<span class="lowercase">ith</span> a<span class="lowercase"
-                  >nima</span
+                w<span class="lowercase">ith</span> a<span class="lowercase">nima</span> f<span
+                  class="lowercase"
+                  >or</span
                 >
-                f<span class="lowercase">or</span> f<span class="lowercase"
-                  >igma.</span
-                >
-                c<span class="lowercase">ollect,</span> b<span class="lowercase"
+                f<span class="lowercase">igma.</span> c<span class="lowercase">ollect,</span> b<span
+                  class="lowercase"
                   >uy</span
                 >
-                a<span class="lowercase">nd</span> s<span class="lowercase"
-                  >ell</span
+                a<span class="lowercase">nd</span> s<span class="lowercase">ell</span> a<span
+                  class="lowercase"
+                  >rt</span
                 >
-                a<span class="lowercase">rt</span> f<span class="lowercase"
-                  >rom</span
-                >
-                m<span class="lowercase">ore</span> t<span class="lowercase"
+                f<span class="lowercase">rom</span> m<span class="lowercase">ore</span> t<span
+                  class="lowercase"
                   >han</span
                 >
-                20<span class="lowercase">k</span> nft a<span class="lowercase"
-                  >rtists.</span
-                >
+                20<span class="lowercase">k</span> nft a<span class="lowercase">rtists.</span>
               </p>
-              <a class="hero__btn" href="#">
+            </div>
+            <div class="hero__container hero__container--right">
+              <div class="hero__card">
+                <picture class="hero__image">
+                  <source
+                    media="screen and
+                  (max-width: 768px)"
+                    srcset="
+                      images/hero-section/space-walking-mobile-1x.jpg,
+                      images/hero-section/space-walking-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
+                  (max-width: 1200px)"
+                    srcset="
+                      images/hero-section/space-walking-tablet-1x.jpg,
+                      images/hero-section/space-walking-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/hero-section/space-walking-desktop-1x.jpg,
+                      images/hero-section/space-walking-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="hero__img"
+                    src="images/hero-section/space-walking.jpg"
+                    alt="space walking"
+                    width="501"
+                    height="401"
+                  />
+                </picture>
+                <div class="hero__card-caption">
+                  <h5 class="hero__card-title">space walking</h5>
+                  <div class="hero__avatar">
+                    <img
+                      class="hero__img-avatar"
+                      src="images/hero-section/avatar-space-walking.jpg"
+                      alt="avatar"
+                      width="24"
+                      height="24"
+                    />
+                    <span class="hero__nickname">animakid</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__container--bottom">
+              <a class="hero__btn" href="account.html">
                 <svg class="hero__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-rocket"></use>
                 </svg>
@@ -111,118 +162,233 @@
                 </li>
               </ul>
             </div>
-            <div class="hero__container">
-              <div class="hero__card">
-                <img
-                  class="hero__img"
-                  src="images/hero-section/space-walking.jpg"
-                  alt="space walking"
-                  width="501"
-                  height="401"
-                />
-                <div class="hero__card-caption">
-                  <h5 class="hero__card-title">space walking</h5>
-                  <div class="hero__avatar">
-                    <img
-                      class="hero__img-avatar"
-                      src="images/hero-section/avatar-space-walking.jpg"
-                      alt="avatar"
-                      width="24"
-                      height="24"
-                    />
-                    <span class="hero__nickname">animakid</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
       <section class="trending section">
         <div class="container">
           <h3 class="trending__title">trending collection</h3>
-          <p class="trending__subtitle">
-            checkout our weekly updated trending collection.
-          </p>
+          <p class="trending__subtitle">checkout our weekly updated trending collection.</p>
           <ul class="trending__cards">
             <li class="trending__card">
-              <img
-                class="trending__img"
-                src="images/trending-section/card-one/colorful-dog-in-okulars.jpg"
-                alt="dog"
-                width="330"
-                height="330"
-              />
+              <picture class="trending__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/trending-section/card-one/colorful-dog-in-okulars-mobile-1x.jpg,
+                    images/trending-section/card-one/colorful-dog-in-okulars-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/trending-section/card-one/colorful-dog-in-okulars-tablet-1x.jpg,
+                    images/trending-section/card-one/colorful-dog-in-okulars-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/trending-section/card-one/colorful-dog-in-okulars-desktop-1x.jpg,
+                    images/trending-section/card-one/colorful-dog-in-okulars-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="trending__img"
+                  src="images/trending-section/card-one/colorful-dog-in-okulars.jpg"
+                  alt="dog"
+                  width="330"
+                  height="330"
+                />
+              </picture>
               <ul class="trending__items">
                 <li class="trending__item">
-                  <img
-                    class="trending__img"
-                    src="images/trending-section/card-one/cat-in-okulars.jpg"
-                    alt="cat"
-                    width="100"
-                    height="100"
-                  />
+                  <picture class="trending__image">
+                    <source
+                      media="screen and
+                    (max-width: 768px)"
+                      srcset="
+                        images/trending-section/card-one/cat-in-okulars-mobile-1x.jpg,
+                        images/trending-section/card-one/cat-in-okulars-mobile-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and
+                    (max-width: 1200px)"
+                      srcset="
+                        images/trending-section/card-one/cat-in-okulars-tablet-1x.jpg,
+                        images/trending-section/card-one/cat-in-okulars-tablet-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        images/trending-section/card-one/cat-in-okulars-desktop-1x.jpg,
+                        images/trending-section/card-one/cat-in-okulars-desktop-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="trending__img"
+                      src="images/trending-section/card-one/cat-in-okulars.jpg"
+                      alt="cat"
+                      width="100"
+                      height="100"
+                    />
+                  </picture>
                 </li>
                 <li class="trending__item">
-                  <img
-                    class="trending__img"
-                    src="images/trending-section/card-one/bear-in-hat-and-okulars.jpg"
-                    alt="bear"
-                    width="100"
-                    height="100"
-                  />
+                  <picture class="trending__image">
+                    <source
+                      media="screen and
+                    (max-width: 768px)"
+                      srcset="
+                        images/trending-section/card-one/bear-in-hat-and-okulars-mobile-1x.jpg,
+                        images/trending-section/card-one/bear-in-hat-and-okulars-mobile-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and
+                    (max-width: 1200px)"
+                      srcset="
+                        images/trending-section/card-one/bear-in-hat-and-okulars-tablet-1x.jpg,
+                        images/trending-section/card-one/bear-in-hat-and-okulars-tablet-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        images/trending-section/card-one/bear-in-hat-and-okulars-desktop-1x.jpg,
+                        images/trending-section/card-one/bear-in-hat-and-okulars-desktop-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="trending__img"
+                      src="images/trending-section/card-one/bear-in-hat-and-okulars.jpg"
+                      alt="bear"
+                      width="100"
+                      height="100"
+                    />
+                  </picture>
                 </li>
                 <li class="trending__item">1025+</li>
               </ul>
-              <h5 class="trending__collection">
-                <span class="uppercase">dsgn</span> animals
-              </h5>
+              <h5 class="trending__collection"><span class="uppercase">dsgn</span> animals</h5>
               <div class="trending__avatar">
                 <img
-                  class="trending__img"
+                  class="trending__img--avatar"
                   src="images/trending-section/card-one/avatar-card-one.jpg"
                   alt="avatar"
                   width="24"
                   height="24"
                 />
-                <span class="trending__caption"
-                  >mr<span class="uppercase">f</span>ox</span
-                >
+                <span class="trending__caption">mr<span class="uppercase">f</span>ox</span>
               </div>
             </li>
             <li class="trending__card">
-              <img
-                class="trending__img"
-                src="images/trending-section/card-two/colorful-mushrooms.jpg"
-                alt="mushrooms"
-                width="330"
-                height="330"
-              />
+              <picture class="trending__image">
+                <!-- <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/trending-section/card-two/colorful-mushrooms-mobile-1x.jpg,
+                    images/trending-section/card-two/colorful-mushrooms-mobile-2x.jpg 2x
+                  "
+                /> -->
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/trending-section/card-two/colorful-mushrooms-tablet-1x.jpg,
+                    images/trending-section/card-two/colorful-mushrooms-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/trending-section/card-two/colorful-mushrooms-desktop-1x.jpg,
+                    images/trending-section/card-two/colorful-mushrooms-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="trending__img"
+                  src="images/trending-section/card-two/colorful-mushrooms.jpg"
+                  alt="mushrooms"
+                  width="330"
+                  height="330"
+                />
+              </picture>
+
               <ul class="trending__items">
                 <li class="trending__item">
-                  <img
-                    class="trending__img"
-                    src="images/trending-section/card-two/different-colorful-mushroom.jpg"
-                    alt="mushroom"
-                    width="100"
-                    height="100"
-                  />
+                  <picture class="trending__image">
+                    <!-- <source
+                      media="screen and
+                    (max-width: 768px)"
+                      srcset="
+                        images/trending-section/card-two/colorful-mushrooms-mobile-1x.jpg,
+                        images/trending-section/card-two/colorful-mushrooms-mobile-2x.jpg 2x
+                      "
+                    /> -->
+                    <source
+                      media="screen and
+                    (max-width: 1200px)"
+                      srcset="
+                        images/trending-section/card-two/different-colorful-mushroom-tablet-1x.jpg,
+                        images/trending-section/card-two/different-colorful-mushroom-tablet-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        images/trending-section/card-two/different-colorful-mushroom-desktop-1x.jpg,
+                        images/trending-section/card-two/different-colorful-mushroom-desktop-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="trending__img"
+                      src="images/trending-section/card-two/different-colorful-mushroom.jpg"
+                      alt="mushroom"
+                      width="100"
+                      height="100"
+                    />
+                  </picture>
                 </li>
                 <li class="trending__item">
-                  <img
-                    class="trending__img"
-                    src="images/trending-section/card-two/another-colorful-mushroom.jpg"
-                    alt="mushroom"
-                    width="100"
-                    height="100"
-                  />
+                  <picture class="trending__image">
+                    <!-- <source
+                      media="screen and
+                    (max-width: 768px)"
+                      srcset="
+                        images/trending-section/card-two/colorful-mushrooms-mobile-1x.jpg,
+                        images/trending-section/card-two/colorful-mushrooms-mobile-2x.jpg 2x
+                      "
+                    /> -->
+                    <source
+                      media="screen and
+                    (max-width: 1200px)"
+                      srcset="
+                        images/trending-section/card-two/another-colorful-mushroom-tablet-1x.jpg,
+                        images/trending-section/card-two/another-colorful-mushroom-tablet-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        images/trending-section/card-two/another-colorful-mushroom-desktop-1x.jpg,
+                        images/trending-section/card-two/another-colorful-mushroom-desktop-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="trending__img"
+                      src="images/trending-section/card-two/another-colorful-mushroom.jpg"
+                      alt="mushroom"
+                      width="100"
+                      height="100"
+                    />
+                  </picture>
                 </li>
                 <li class="trending__item">1025+</li>
               </ul>
               <h5 class="trending__collection">magic mushrooms</h5>
               <div class="trending__avatar">
                 <img
-                  class="trending__img"
+                  class="trending__img--avatar"
                   src="images/trending-section/card-two/avatar-card-two.jpg"
                   alt="avatar"
                   width="24"
@@ -270,9 +436,7 @@
                   height="24"
                 />
                 <span class="trending__caption"
-                  >be<span class="uppercase">k</span>ind2<span class="uppercase"
-                    >r</span
-                  >obots</span
+                  >be<span class="uppercase">k</span>ind2<span class="uppercase">r</span>obots</span
                 >
               </div>
             </li>
@@ -289,6 +453,347 @@
                 <span class="uppercase">nft</span> marketplace
               </p>
             </div>
+            <ul class="creators__cards">
+              <li class="creators__card">
+                <span class="creators__number">1</span>
+                <picture class="creators__image">
+                  <source
+                    media="screen and
+                (max-width: 768px)"
+                    srcset="
+                      images/top-creators-section/keepitreal-avatar-mobile-1x.jpg,
+                      images/top-creators-section/keepitreal-avatar-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
+                (max-width: 1200px)"
+                    srcset="
+                      images/top-creators-section/keepitreal-avatar-tablet-1x.jpg,
+                      images/top-creators-section/keepitreal-avatar-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/top-creators-section/keepitreal-avatar-desktop-1x.jpg,
+                      images/top-creators-section/keepitreal-avatar-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="creators__img"
+                    src="images/top-creators-section/keepitreal-avatar.jpg"
+                    alt="avatar"
+                    width="120"
+                    height="120"
+                  />
+                </picture>
+                <div class="creators__info">
+                  <h5 class="creators__nickname">keepitreal</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">2</span>
+                <picture class="creators__image">
+                  <source
+                    media="screen and
+                (max-width: 768px)"
+                    srcset="
+                      images/top-creators-section/digilab-avatar-mobile-1x.jpg,
+                      images/top-creators-section/digilab-avatar-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
+                (max-width: 1200px)"
+                    srcset="
+                      images/top-creators-section/digilab-avatar-tablet-1x.jpg,
+                      images/top-creators-section/digilab-avatar-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/top-creators-section/digilab-avatar-desktop-1x.jpg,
+                      images/top-creators-section/digilab-avatar-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="creators__img"
+                    src="images/top-creators-section/digilab-avatar.jpg"
+                    alt="avatar"
+                    width="120"
+                    height="120"
+                  />
+                </picture>
+                <div class="creators__info">
+                  <h5 class="creators__nickname">digi<span class="uppercase">l</span>ab</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">3</span>
+                <picture class="creators__image">
+                  <source
+                    media="screen and
+                (max-width: 768px)"
+                    srcset="
+                      images/top-creators-section/gravityone-avatar-mobile-1x.jpg,
+                      images/top-creators-section/gravityone-avatar-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
+                (max-width: 1200px)"
+                    srcset="
+                      images/top-creators-section/gravityone-avatar-tablet-1x.jpg,
+                      images/top-creators-section/gravityone-avatar-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/top-creators-section/gravityone-avatar-desktop-1x.jpg,
+                      images/top-creators-section/gravityone-avatar-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="creators__img"
+                    src="images/top-creators-section/gravityone-avatar.jpg"
+                    alt="avatar"
+                    width="120"
+                    height="120"
+                  />
+                </picture>
+                <div class="creators__info">
+                  <h5 class="creators__nickname">gravity<span class="uppercase">o</span>ne</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">4</span>
+                <picture class="creators__image">
+                  <source
+                    media="screen and
+                (max-width: 768px)"
+                    srcset="
+                      images/top-creators-section/juanie-avatar-mobile-1x.jpg,
+                      images/top-creators-section/juanie-avatar-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
+                (max-width: 1200px)"
+                    srcset="
+                      images/top-creators-section/juanie-avatar-tablet-1x.jpg,
+                      images/top-creators-section/juanie-avatar-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/top-creators-section/juanie-avatar-desktop-1x.jpg,
+                      images/top-creators-section/juanie-avatar-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="creators__img"
+                    src="images/top-creators-section/juanie-avatar.jpg"
+                    alt="avatar"
+                    width="120"
+                    height="120"
+                  />
+                </picture>
+                <div class="creators__info">
+                  <h5 class="creators__nickname">juanie</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">5</span>
+                <picture class="creators__image">
+                  <source
+                    media="screen and
+                (max-width: 768px)"
+                    srcset="
+                      images/top-creators-section/bluewhale-avatar-mobile-1x.jpg,
+                      images/top-creators-section/bluewhale-avatar-mobile-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and
+                (max-width: 1200px)"
+                    srcset="
+                      images/top-creators-section/bluewhale-avatar-tablet-1x.jpg,
+                      images/top-creators-section/bluewhale-avatar-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/top-creators-section/bluewhale-avatar-desktop-1x.jpg,
+                      images/top-creators-section/bluewhale-avatar-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="creators__img"
+                    src="images/top-creators-section/bluewhale-avatar.jpg"
+                    alt="avatar"
+                    width="120"
+                    height="120"
+                  />
+                </picture>
+                <div class="creators__info">
+                  <h5 class="creators__nickname">blue<span class="uppercase">w</span>hale</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">6</span>
+                <picture class="creators__image">
+                  <!-- <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/top-creators-section/bluewhale-avatar-mobile-1x.jpg,
+                    images/top-creators-section/bluewhale-avatar-mobile-2x.jpg 2x
+                  "
+                /> -->
+                  <source
+                    media="screen and
+                (max-width: 1200px)"
+                    srcset="
+                      images/top-creators-section/mrfox-avatar-tablet-1x.jpg,
+                      images/top-creators-section/mrfox-avatar-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/top-creators-section/mrfox-avatar-desktop-1x.jpg,
+                      images/top-creators-section/mrfox-avatar-desktop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="creators__img"
+                    src="images/top-creators-section/mrfox-avatar.jpg"
+                    alt="avatar"
+                    width="120"
+                    height="120"
+                  />
+                </picture>
+
+                <div class="creators__info">
+                  <h5 class="creators__nickname">mr <span class="uppercase">f</span>ox</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">7</span>
+                <img
+                  class="creators__img"
+                  src="images/top-creators-section/shroomie-avatar.jpg"
+                  alt="avatar"
+                  width="120"
+                  height="120"
+                />
+                <div class="creators__info">
+                  <h5 class="creators__nickname">shroomie</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">8</span>
+                <img
+                  class="creators__img"
+                  src="images/top-creators-section/robotica-avatar.jpg"
+                  alt="avatar"
+                  width="120"
+                  height="120"
+                />
+                <div class="creators__info">
+                  <h5 class="creators__nickname">robotica</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">9</span>
+                <img
+                  class="creators__img"
+                  src="images/top-creators-section/rustyrobot-avatar.jpg"
+                  alt="avatar"
+                  width="120"
+                  height="120"
+                />
+                <div class="creators__info">
+                  <h5 class="creators__nickname">rusty<span class="uppercase">r</span>obot</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <a href="animakid.html" class="creators__link">
+                  <span class="creators__number">10</span>
+                  <img
+                    class="creators__img"
+                    src="images/top-creators-section/animakid-avatar.jpg"
+                    alt="avatar"
+                    width="120"
+                    height="120"
+                  />
+                  <div class="creators__info">
+                    <h5 class="creators__nickname">animakid</h5>
+                    <p class="creators__sales">
+                      total sales: <span class="creators__price">34.53 eth</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">11</span>
+                <img
+                  class="creators__img"
+                  src="images/top-creators-section/dotgu-avatar.jpg"
+                  alt="avatar"
+                  width="120"
+                  height="120"
+                />
+                <div class="creators__info">
+                  <h5 class="creators__nickname">dotgu</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+              <li class="creators__card">
+                <span class="creators__number">12</span>
+                <img
+                  class="creators__img"
+                  src="images/top-creators-section/ghiblier-avatar.jpg"
+                  alt="avatar"
+                  width="120"
+                  height="120"
+                />
+                <div class="creators__info">
+                  <h5 class="creators__nickname">ghiblier</h5>
+                  <p class="creators__sales">
+                    total sales: <span class="creators__price">34.53 eth</span>
+                  </p>
+                </div>
+              </li>
+            </ul>
             <a class="creators__btn" href="#">
               <svg class="creators__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-rocket"></use>
@@ -296,212 +801,6 @@
               view rankings</a
             >
           </div>
-          <ul class="creators__cards">
-            <li class="creators__card">
-              <span class="creators__number">1</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/keepitreal-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">keepitreal</h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">2</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/digilab-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">
-                  digi<span class="uppercase">l</span>ab
-                </h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">3</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/gravityone-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">
-                  gravity<span class="uppercase">o</span>ne
-                </h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">4</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/juanie-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">juanie</h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">5</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/bluewhale-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">
-                  blue<span class="uppercase">w</span>hale
-                </h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">6</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/mrfox-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">
-                  mr <span class="uppercase">f</span>ox
-                </h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">7</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/shroomie-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">shroomie</h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">8</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/robotica-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">robotica</h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">9</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/rustyrobot-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">
-                  rusty<span class="uppercase">r</span>obot
-                </h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <a href="creators/animakid.html" class="creators__link">
-              <span class="creators__number">10</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/animakid-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">animakid</h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-              </a>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">11</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/dotgu-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">dotgu</h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-            <li class="creators__card">
-              <span class="creators__number">12</span>
-              <img
-                class="creators__img"
-                src="images/top-creators-section/ghiblier-avatar.jpg"
-                alt="avatar"
-                width="120"
-                height="120"
-              />
-              <div class="creators__info">
-                <h5 class="creators__nickname">ghiblier</h5>
-                <p class="creators__sales">
-                  total sales: <span class="creators__price">34.53 eth</span>
-                </p>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="categories section">
@@ -509,108 +808,300 @@
           <h3 class="categories__title">browse categories</h3>
           <ul class="categories__cards">
             <li class="categories__card">
-              <img
-                class="categories__img"
-                src="images/browse-categories-section/an-image-of-a-flying-whale.jpg"
-                alt="whale"
-                width="240"
-                height="240"
-              />
+              <picture class="categories__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/browse-categories-section/an-image-of-a-flying-whale-mobile-1x.jpg,
+                    images/browse-categories-section/an-image-of-a-flying-whale-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/browse-categories-section/an-image-of-a-flying-whale-tablet-1x.jpg,
+                    images/browse-categories-section/an-image-of-a-flying-whale-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/browse-categories-section/an-image-of-a-flying-whale-desktop-1x.jpg,
+                    images/browse-categories-section/an-image-of-a-flying-whale-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="categories__img"
+                  src="images/browse-categories-section/an-image-of-a-flying-whale.jpg"
+                  alt="whale"
+                  width="240"
+                  height="240"
+                />
+              </picture>
               <svg class="categories__icon" width="100" height="100">
                 <use href="./images/icons.svg#icon-paintbrush"></use>
               </svg>
               <h5 class="categories__subtitle">art</h5>
             </li>
             <li class="categories__card">
-              <img
-                class="categories__img"
-                src="images/browse-categories-section/monkey-pictures.jpg"
-                alt="monkey"
-                width="240"
-                height="240"
-              />
+              <picture class="categories__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/browse-categories-section/monkey-pictures-mobile-1x.jpg,
+                    images/browse-categories-section/monkey-pictures-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/browse-categories-section/monkey-pictures-tablet-1x.jpg,
+                    images/browse-categories-section/monkey-pictures-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/browse-categories-section/monkey-pictures-desktop-1x.jpg,
+                    images/browse-categories-section/monkey-pictures-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="categories__img"
+                  src="images/browse-categories-section/monkey-pictures.jpg"
+                  alt="monkey"
+                  width="240"
+                  height="240"
+                />
+              </picture>
               <svg class="categories__icon" width="100" height="100">
                 <use href="./images/icons.svg#icon-swatches"></use>
               </svg>
               <h5 class="categories__subtitle">collectibles</h5>
             </li>
             <li class="categories__card">
-              <img
-                class="categories__img"
-                src="images/browse-categories-section/violin-on-the-colorfull-background.jpg"
-                alt="violin"
-                width="240"
-                height="240"
-              />
+              <picture class="categories__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/browse-categories-section/violin-on-the-colorfull-background-mobile-1x.jpg,
+                    images/browse-categories-section/violin-on-the-colorfull-background-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/browse-categories-section/violin-on-the-colorfull-background-tablet-1x.jpg,
+                    images/browse-categories-section/violin-on-the-colorfull-background-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/browse-categories-section/violin-on-the-colorfull-background-desktop-1x.jpg,
+                    images/browse-categories-section/violin-on-the-colorfull-background-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="categories__img"
+                  src="images/browse-categories-section/violin-on-the-colorfull-background.jpg"
+                  alt="violin"
+                  width="240"
+                  height="240"
+                />
+              </picture>
               <svg class="categories__icon" width="100" height="100">
                 <use href="./images/icons.svg#icon-musicnotes"></use>
               </svg>
               <h5 class="categories__subtitle">music</h5>
             </li>
             <li class="categories__card">
-              <img
-                class="categories__img"
-                src="images/browse-categories-section/pictures-of-a-old-man.jpg"
-                alt="old man"
-                width="240"
-                height="240"
-              />
+              <picture class="categories__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/browse-categories-section/pictures-of-a-old-man-mobile-1x.jpg,
+                    images/browse-categories-section/pictures-of-a-old-man-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/browse-categories-section/pictures-of-a-old-man-tablet-1x.jpg,
+                    images/browse-categories-section/pictures-of-a-old-man-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/browse-categories-section/pictures-of-a-old-man-desktop-1x.jpg,
+                    images/browse-categories-section/pictures-of-a-old-man-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="categories__img"
+                  src="images/browse-categories-section/pictures-of-a-old-man.jpg"
+                  alt="old man"
+                  width="240"
+                  height="240"
+                />
+              </picture>
               <svg class="categories__icon" width="100" height="100">
                 <use href="./images/icons.svg#icon-camera"></use>
               </svg>
               <h5 class="categories__subtitle">photography</h5>
             </li>
             <li class="categories__card">
-              <img
-                class="categories__img"
-                src="images/browse-categories-section/child-looking-at-the-sky.jpg"
-                alt="child"
-                width="240"
-                height="240"
-              />
+              <picture class="categories__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/browse-categories-section/child-looking-at-the-sky-mobile-1x.jpg,
+                    images/browse-categories-section/child-looking-at-the-sky-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/browse-categories-section/child-looking-at-the-sky-tablet-1x.jpg,
+                    images/browse-categories-section/child-looking-at-the-sky-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/browse-categories-section/child-looking-at-the-sky-desktop-1x.jpg,
+                    images/browse-categories-section/child-looking-at-the-sky-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="categories__img"
+                  src="images/browse-categories-section/child-looking-at-the-sky.jpg"
+                  alt="child"
+                  width="240"
+                  height="240"
+                />
+              </picture>
               <svg class="categories__icon" width="100" height="100">
                 <use href="./images/icons.svg#icon-videocamera"></use>
               </svg>
               <h5 class="categories__subtitle">video</h5>
             </li>
             <li class="categories__card">
-              <img
-                class="categories__img"
-                src="images/browse-categories-section/key-on-the-red-background.jpg"
-                alt="key"
-                width="240"
-                height="240"
-              />
+              <picture class="categories__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/browse-categories-section/key-on-the-red-background-mobile-1x.jpg,
+                    images/browse-categories-section/key-on-the-red-background-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/browse-categories-section/key-on-the-red-background-tablet-1x.jpg,
+                    images/browse-categories-section/key-on-the-red-background-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/browse-categories-section/key-on-the-red-background-desktop-1x.jpg,
+                    images/browse-categories-section/key-on-the-red-background-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="categories__img"
+                  src="images/browse-categories-section/key-on-the-red-background.jpg"
+                  alt="key"
+                  width="240"
+                  height="240"
+                />
+              </picture>
               <svg class="categories__icon" width="100" height="100">
                 <use href="./images/icons.svg#icon-magicwand"></use>
               </svg>
               <h5 class="categories__subtitle">utility</h5>
             </li>
             <li class="categories__card">
-              <img
-                class="categories__img"
-                src="images/browse-categories-section/lying-basketball-ball-on-the-court.jpg"
-                alt="whale"
-                width="240"
-                height="240"
-              />
+              <picture class="categories__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/browse-categories-section/lying-basketball-ball-on-the-court-mobile-1x.jpg,
+                    images/browse-categories-section/lying-basketball-ball-on-the-court-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/browse-categories-section/lying-basketball-ball-on-the-court-tablet-1x.jpg,
+                    images/browse-categories-section/lying-basketball-ball-on-the-court-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/browse-categories-section/lying-basketball-ball-on-the-court-desktop-1x.jpg,
+                    images/browse-categories-section/lying-basketball-ball-on-the-court-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="categories__img"
+                  src="images/browse-categories-section/lying-basketball-ball-on-the-court.jpg"
+                  alt="whale"
+                  width="240"
+                  height="240"
+                />
+              </picture>
               <svg class="categories__icon" width="100" height="100">
                 <use href="./images/icons.svg#icon-basketball"></use>
               </svg>
               <h5 class="categories__subtitle">sport</h5>
             </li>
             <li class="categories__card">
-              <img
-                class="categories__img"
-                src="images/browse-categories-section/virtual-city-in-the-clouds.jpg"
-                alt="whale"
-                width="240"
-                height="240"
-              />
+              <picture class="categories__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/browse-categories-section/virtual-city-in-the-clouds-mobile-1x.jpg,
+                    images/browse-categories-section/virtual-city-in-the-clouds-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/browse-categories-section/virtual-city-in-the-clouds-tablet-1x.jpg,
+                    images/browse-categories-section/virtual-city-in-the-clouds-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/browse-categories-section/virtual-city-in-the-clouds-desktop-1x.jpg,
+                    images/browse-categories-section/virtual-city-in-the-clouds-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="categories__img"
+                  src="images/browse-categories-section/virtual-city-in-the-clouds.jpg"
+                  alt="whale"
+                  width="240"
+                  height="240"
+                />
+              </picture>
               <svg class="categories__icon" width="100" height="100">
                 <use href="./images/icons.svg#icon-planet"></use>
               </svg>
-              <h5 class="categories__subtitle">virtual worlds</h5>
+              <h5 class="categories__subtitle">virtual <span class="uppercase">w</span>orlds</h5>
             </li>
           </ul>
         </div>
@@ -619,29 +1110,45 @@
         <div class="container">
           <div class="discover__wrapper">
             <div class="discover__container">
-              <h3 class="discover__title">
-                discover more <span class="uppercase">nft</span>s
-              </h3>
+              <h3 class="discover__title">discover more <span class="uppercase">nft</span>s</h3>
               <span class="discover__subtitle"
                 >explore new tranding <span class="uppercase">nft</span>s</span
               >
             </div>
-            <a class="discover__btn" href="#">
-              <svg class="discover__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-eye"></use>
-              </svg>
-              see all</a
-            >
-          </div>
           <ul class="discover__cards">
             <li class="discover__card">
-              <img
-                class="discover__img"
-                src="images/discover-more-section/weird-starship.jpg"
-                alt="starship"
-                width="330"
-                height="296"
-              />
+              <picture class="discover__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/discover-more-section/weird-starship-mobile-1x.jpg,
+                    images/discover-more-section/weird-starship-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/discover-more-section/weird-starship-tablet-1x.jpg,
+                    images/discover-more-section/weird-starship-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/discover-more-section/weird-starship-desktop-1x.jpg,
+                    images/discover-more-section/weird-starship-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="discover__img"
+                  src="images/discover-more-section/weird-starship.jpg"
+                  alt="starship"
+                  width="330"
+                  height="296"
+                />
+              </picture>
+
               <div class="discover__info">
                 <div class="discover__info-artist">
                   <h5 class="discover__title">distant galaxy</h5>
@@ -665,21 +1172,44 @@
                   </div>
                   <div class="discover__bid">
                     <span class="discover__top">highest bid</span>
-                    <span class="discover__bottom"
-                      >0.33 <span class="lowercase">w</span>eth</span
-                    >
+                    <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
                   </div>
                 </div>
               </div>
             </li>
             <li class="discover__card">
-              <img
-                class="discover__img"
-                src="images/discover-more-section/child-for-background-blue-sky.jpg"
-                alt="child"
-                width="330"
-                height="296"
-              />
+              <picture class="discover__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/discover-more-section/child-for-background-blue-sky-mobile-1x.jpg,
+                    images/discover-more-section/child-for-background-blue-sky-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/discover-more-section/child-for-background-blue-sky-tablet-1x.jpg,
+                    images/discover-more-section/child-for-background-blue-sky-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/discover-more-section/child-for-background-blue-sky-desktop-1x.jpg,
+                    images/discover-more-section/child-for-background-blue-sky-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="discover__img"
+                  src="images/discover-more-section/child-for-background-blue-sky.jpg"
+                  alt="child"
+                  width="330"
+                  height="296"
+                />
+              </picture>
+
               <div class="discover__info">
                 <div class="discover__info-artist">
                   <h5 class="discover__title">life on edena</h5>
@@ -691,9 +1221,7 @@
                       width="24"
                       height="24"
                     />
-                    <span class="discover__nickname"
-                      >nebula<span class="uppercase">k</span>id</span
-                    >
+                    <span class="discover__nickname">nebula<span class="uppercase">k</span>id</span>
                   </div>
                 </div>
                 <div class="discover__info-additional">
@@ -703,26 +1231,47 @@
                   </div>
                   <div class="discover__bid">
                     <span class="discover__top">highest bid</span>
-                    <span class="discover__bottom"
-                      >0.33 <span class="lowercase">w</span>eth</span
-                    >
+                    <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
                   </div>
                 </div>
               </div>
             </li>
             <li class="discover__card">
-              <img
-                class="discover__img"
-                src="images/discover-more-section/astronaut-in-a-spacesuit.jpg"
-                alt="astronaut"
-                width="330"
-                height="296"
-              />
+              <picture class="discover__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/discover-more-section/astronaut-in-a-spacesuit-mobile-1x.jpg,
+                    images/discover-more-section/astronaut-in-a-spacesuit-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/discover-more-section/astronaut-in-a-spacesuit-tablet-1x.jpg,
+                    images/discover-more-section/astronaut-in-a-spacesuit-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/discover-more-section/astronaut-in-a-spacesuit-desktop-1x.jpg,
+                    images/discover-more-section/astronaut-in-a-spacesuit-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="discover__img"
+                  src="images/discover-more-section/astronaut-in-a-spacesuit.jpg"
+                  alt="astronaut"
+                  width="330"
+                  height="296"
+                />
+              </picture>
+
               <div class="discover__info">
                 <div class="discover__info-artist">
-                  <h5 class="discover__title">
-                    astro<span class="uppercase">f</span>iction
-                  </h5>
+                  <h5 class="discover__title">astro<span class="uppercase">f</span>iction</h5>
                   <div class="discover__avatar">
                     <img
                       class="discover__img--avatar"
@@ -741,14 +1290,19 @@
                   </div>
                   <div class="discover__bid">
                     <span class="discover__top">highest bid</span>
-                    <span class="discover__bottom"
-                      >0.33 <span class="lowercase">w</span>eth</span
-                    >
+                    <span class="discover__bottom">0.33 <span class="lowercase">w</span>eth</span>
                   </div>
                 </div>
               </div>
             </li>
           </ul>
+          <a class="discover__btn" href="#">
+            <svg class="discover__icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-eye"></use>
+            </svg>
+            see all</a
+          >
+        </div>
         </div>
       </section>
       <section class="nft">
@@ -766,28 +1320,33 @@
                 <span class="nft__nickname">shommie</span>
               </div>
               <h2 class="nft__title">magic mashrooms</h2>
-              <a class="nft__btn" href="#">
+
+              <div class="nft__timer">
+                <span class="nft__label">auction ends in:</span>
+                <ul class="nft__items">
+                  <li class="nft__item">
+                    59
+                    <span class="nft__time">hours</span>
+                  </li>
+                  <li class="nft__item">:</li>
+                  <li class="nft__item">
+                    59
+                    <span class="nft__time">minutes</span>
+                  </li>
+                  <li class="nft__item">:</li>
+                  <li class="nft__item">
+                    59
+                    <span class="nft__time">seconds</span>
+                  </li>
+                </ul>
+              </div>
+              <a class="nft__btn" href="nft.html">
                 <svg class="nft__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-eye"></use>
                 </svg>
                 <span class="uppercase">s</span>ee
                 <span class="uppercase">nft</span>
               </a>
-              <div class="nft__timer">
-                <span class="nft__label">auction ends in:</span>
-                <ul class="nft__items">
-                  <li class="nft__item">59</li>
-                  <li class="nft__item">:</li>
-                  <li class="nft__item">59</li>
-                  <li class="nft__item">:</li>
-                  <li class="nft__item">59</li>
-                </ul>
-                <ul class="nft__times">
-                  <li class="nft__time">hours</li>
-                  <li class="nft__time">minutes</li>
-                  <li class="nft__time">seconds</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
@@ -798,62 +1357,133 @@
           <span class="works__subtitle">find out to get started</span>
           <ul class="works__cards">
             <li class="works__card">
-              <img
-                class="works__img"
-                src="images/how-it-work-section/icon-one.png"
-                alt="wallet"
-                width="250"
-                height="250"
-              />
+              <picture class="works__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/works-section/icon-1-mobile-1x.png,
+                    images/works-section/icon-1-mobile-2x.png 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/works-section/icon-1-tablet-1x.png,
+                    images/works-section/icon-1-tablet-2x.png 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/works-section/icon-1-desktop-1x.png,
+                    images/works-section/icon-1-desktop-2x.png 2x
+                  "
+                />
+                <img
+                  class="works__img"
+                  src="images/how-it-work-section/icon-one.png"
+                  alt="wallet"
+                  width="250"
+                  height="250"
+                />
+              </picture>
               <ul class="works__details">
                 <li class="works__detail">
                   <h5 class="works__title-detail">setup tour wallet</h5>
                 </li>
                 <li class="works__detail">
                   <p class="works__text">
-                    Set up your wallet of choice.<br />
-                    Connect it to the Animarket by clicking the wallet icon in
-                    the top right corner.
+                    Set up your wallet of choice.
+                    Connect it to the Animarket by clicking the wallet icon in the top right corner.
                   </p>
                 </li>
               </ul>
             </li>
             <li class="works__card">
-              <img
-                class="works__img"
-                src="images/how-it-work-section/icon-two.png"
-                alt="icon"
-                width="250"
-                height="250"
-              />
+              <picture class="works__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/works-section/icon-2-mobile-1x.png,
+                    images/works-section/icon-2-mobile-2x.png 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/works-section/icon-2-tablet-1x.png,
+                    images/works-section/icon-2-tablet-2x.png 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/works-section/icon-2-desktop-1x.png,
+                    images/works-section/icon-2-desktop-2x.png 2x
+                  "
+                />
+                <img
+                  class="works__img"
+                  src="images/how-it-work-section/icon-two.png"
+                  alt="wallet"
+                  width="250"
+                  height="250"
+                />
+              </picture>
               <ul class="works__details">
                 <li class="works__detail">
                   <h5 class="works__title-detail">create collection</h5>
                 </li>
                 <li class="works__detail">
                   <p class="works__text">
-                    Upload your work and setup your collection. Add a
-                    description, social links and floor price.
+                    Upload your work and setup your collection. Add a description, social links and
+                    floor price.
                   </p>
                 </li>
               </ul>
             </li>
             <li class="works__card">
-              <img
-                class="works__img"
-                src="images/how-it-work-section/icon-three.png"
-                alt="icon"
-                width="250"
-                height="250"
-              />
+              <picture class="works__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/works-section/icon-3-mobile-1x.png,
+                    images/works-section/icon-3-mobile-2x.png 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/works-section/icon-3-tablet-1x.png,
+                    images/works-section/icon-3-tablet-2x.png 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/works-section/icon-3-desktop-1x.png,
+                    images/works-section/icon-3-desktop-2x.png 2x
+                  "
+                />
+                <img
+                  class="works__img"
+                  src="images/how-it-work-section/icon-three.png"
+                  alt="wallet"
+                  width="250"
+                  height="250"
+                />
+              </picture>
               <ul class="works__details">
                 <li class="works__detail">
                   <h5 class="works__title-detail">start earning</h5>
                 </li>
                 <li class="works__detail">
                   <p class="works__text">
-                    Choose between auctions and fixed-price listings. Start
-                    earning by selling your NFTs or trading others.
+                    Choose between auctions and fixed-price listings. Start earning by selling your
+                    NFTs or trading others.
                   </p>
                 </li>
               </ul>
@@ -865,30 +1495,60 @@
         <div class="container">
           <div class="subscribe__wrapper">
             <div class="subscribe__container--img">
-              <img
-                class="subscribe__img"
-                src="images/subscribe-section/astronaut-reads-newspaper-in-spacesuit.jpg"
-                alt="astronaut"
-                width="425"
-                height="310"
-              />
+              <picture class="subscribe__image">
+                <source
+                  media="screen and
+                (max-width: 768px)"
+                  srcset="
+                    images/subscribe-section/astronaut-reads-newspaper-in-spacesuit-mobile-1x.jpg,
+                    images/subscribe-section/astronaut-reads-newspaper-in-spacesuit-mobile-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and
+                (max-width: 1200px)"
+                  srcset="
+                    images/subscribe-section/astronaut-reads-newspaper-in-spacesuit-tablet-1x.jpg,
+                    images/subscribe-section/astronaut-reads-newspaper-in-spacesuit-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images/subscribe-section/astronaut-reads-newspaper-in-spacesuit-desktop-1x.jpg,
+                    images/subscribe-section/astronaut-reads-newspaper-in-spacesuit-desktop-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="subscribe__img"
+                  src="images/subscribe-section/astronaut-reads-newspaper-in-spacesuit.jpg"
+                  alt="astronaut"
+                  width="425"
+                  height="310"
+                />
+              </picture>
             </div>
             <div class="subscribe__container--email">
-              <h3 class="subscribe__title">
+              <h4 class="subscribe__title">
                 join our weekly<br />
                 digest
-              </h3>
+              </h4>
               <p class="subscribe__subtitle">
                 Get exclusive promotions & updates<br />
                 straight to your inbox.
               </p>
-              <form action="#" method="post">
+              <form class="subscribe__form" method="GET" name="subscribeForm">
                 <input
-                  type="text"
-                  name="email"
-                  placeholder="enter your email here"
+                  class="subscribe__input"
+                  type="email"
+                  name="userEmail"
+                  placeholder="Enter your email here"
                 />
-                <button type="button">subscribe</button>
+                <button type="submit" class="subscribe__btn">
+                  <svg class="subscribe__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-envelopesimple"></use>
+                  </svg>
+                  <span class="uppercase">s</span>ubscribe
+                </button>
               </form>
             </div>
           </div>
@@ -901,9 +1561,9 @@
           <li class="footer__item">
             <a class="footer__link-logo" href="index.html">
               <svg class="footer__icon-logo" width="32" height="32">
-                <use href="./images/icons.svg#icon-storefrontfooter"></use>
+                <use href="./images/icons.svg#icon-storefront"></use>
               </svg>
-              <p><span class="uppercase">nft</span> marketplace</p>
+              <p class="footer__logo"><span class="uppercase">nft</span> marketplace</p>
             </a>
             <p class="footer__text">
               <span class="uppercase">nft</span> marketplace
@@ -944,42 +1604,48 @@
           </li>
           <li class="footer__item">
             <h5 class="footer__title">explore</h5>
-            <ul class="footer__items-menu">
-              <li class="footer__item-menu">
-                <a class="footer__link-menu" href="#"
-                  ><span class="uppercase">m</span>arketplace</a
-                >
-              </li>
-              <li class="footer__item-menu">
-                <a class="footer__link-menu" href="#"
-                  ><span class="uppercase">r</span>ankings</a
-                >
-              </li>
-              <li class="footer__item-menu">
-                <a class="footer__link-menu" href="wallet.html"
-                  ><span class="uppercase">c</span>onnect a wallet</a
-                >
-              </li>
-            </ul>
+            <nav>
+              <ul class="footer__items-menu">
+                <li class="footer__item-menu">
+                  <a class="footer__link-menu" href="#"
+                    ><span class="uppercase">m</span>arketplace</a
+                  >
+                </li>
+                <li class="footer__item-menu">
+                  <a class="footer__link-menu" href="#"><span class="uppercase">r</span>ankings</a>
+                </li>
+                <li class="footer__item-menu">
+                  <a class="footer__link-menu" href="wallet.html"
+                    ><span class="uppercase">c</span>onnect a wallet</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </li>
           <li class="footer__item">
             <h5 class="footer__title">join our weekly digest</h5>
             <p class="footer__text">
-              Get exclusive promotions & updates straight to your inbox.
+              Get exclusive promotions & updates
+              straight to your inbox.
             </p>
-            <form action="#" method="post">
+            <form class="footer__form" method="GET" name="subscribeForm">
               <input
-                type="text"
+                class="footer__form-input"
+                type="email"
                 name="email"
-                placeholder="enter your email here"
+                placeholder="Enter your email here"
               />
-              <button type="button">subscribe</button>
+              <button class="footer__form-btn" type="button">
+                <svg class="footer__icon-form" width="20" height="20">
+                  <use href="./images/icons.svg#icon-envelopesimple"></use>
+                </svg>
+                <span class="uppercase">s</span>ubscribe
+              </button>
             </form>
           </li>
         </ul>
         <p class="footer__caption">
-          &#xa9; <span class="uppercase">nft</span>
-          <span class="uppercase">m</span>arket.
+          &#xa9; <span class="uppercase">nft</span> <span class="uppercase">m</span>arket.
           <span class="uppercase">u</span>se this template freely.
         </p>
       </div>

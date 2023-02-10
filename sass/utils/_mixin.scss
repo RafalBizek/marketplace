@@ -1,0 +1,53 @@
+//mobile first
+$tablet: 768px;
+$desktop: 1200px;
+// media devices
+@mixin tablet {
+  @media screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+//common mixin
+@mixin subpage-title {
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+@mixin subpage-subtitle {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+@mixin button {
+  text-decoration: none;
+  color: $fontColor;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 20px;
+  padding: 20px 50px 20px 50px;
+  display: inline-flex;
+  align-items: center;
+}
+//titles for section
+@mixin title {
+  font-size: 38px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+//subtitle for section
+@mixin subtitle {
+  font-size: 22px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}

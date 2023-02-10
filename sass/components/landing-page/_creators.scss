@@ -1,0 +1,116 @@
+.creators {
+  &__title {
+    font-size: 28px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+  }
+  &__card:nth-child(6),
+  &__card:nth-child(7),
+  &__card:nth-child(8),
+  &__card:nth-child(9),
+  &__card:nth-child(10),
+  &__card:nth-child(11),
+  &__card:nth-child(12) {
+    display: none;
+  }
+  &__cards {
+    margin-bottom: 40px;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: $bgAdditionalColor;
+    border-radius: 20px;
+  }
+  &__card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__number {
+    color: $fontCaptionColor;
+    font-family: $fontSecondary;
+    padding: 4px 10px;
+    background-color: $bgBasicColor;
+    border-radius: 50px;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+  }
+  &__image {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 60px;
+    margin-right: 20px;
+  }
+  &__nickname {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__sales {
+    color: $fontCaptionColor;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  &__price {
+    color: $fontColor;
+    font-family: $fontSecondary;
+    text-transform: uppercase;
+    margin-left: 5px;
+  }
+  &__btn {
+    border: 2px solid $accentColor;
+    color: $fontColor;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 20px;
+    padding: 19px 84px 19px 80px;
+    display: flex;
+  }
+  &__icon {
+    fill: $accentColor;
+    margin-right: 12px;
+  }
+  @include tablet {
+    &__wrapper {
+      position: relative;
+    }
+    &__subtitle {
+      max-width: 343px;
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 0;
+    }
+    &__card:nth-child(6) {
+      display: flex;
+    }
+    &__sales {
+      padding-right: 20px;
+    }
+    &__btn {
+      position: absolute;
+      top: 33px;
+      right: 50px;
+      padding: 19px 40px 19px 40px;
+    }
+  }
+}
