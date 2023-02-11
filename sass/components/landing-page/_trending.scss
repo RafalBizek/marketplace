@@ -25,10 +25,10 @@
     border-radius: 24px;
     margin-bottom: 15px;
   }
-  &__image--size {
-    width: 97%;
-    height: auto;
-  }
+  // &__image--size {
+  //   width: 97%;
+  //   height: auto;
+  // }
   &__items {
     display: flex;
     align-items: flex-start;
@@ -39,7 +39,7 @@
     margin-right: 15px;
   }
   &__item:nth-child(3) {
-    padding: 36.5px 23px 36.5px 23px;
+    padding: 34px 23px 34px 23px;
     background-color: $accentColor;
     border-radius: 20px;
     font-family: $fontSecondary;
