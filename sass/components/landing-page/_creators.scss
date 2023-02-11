@@ -97,7 +97,9 @@
     &__cards {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: $spaceGap;
+    }
+    &__card {
       margin-bottom: 0;
     }
     &__card:nth-child(6) {
@@ -111,6 +113,56 @@
       top: 33px;
       right: 45px;
       padding: 19px 40px 19px 40px;
+    }
+  }
+  @include desktop {
+    &__title {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    &__subtitle {
+      max-width: 703px;
+      font-size: 22px;
+      line-height: 1.6;
+    }
+    &__btn {
+      right: 130px;
+    }
+    &__card:nth-child(7),
+    &__card:nth-child(8),
+    &__card:nth-child(9),
+    &__card:nth-child(10),
+    &__card:nth-child(11),
+    &__card:nth-child(12) {
+      display: flex;
+    }
+    &__cards {
+      gap: $spaceGap;
+    }
+    .creators__card {
+      max-width: 240px;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 0;
+      flex-basis: calc((100% - $spaceGap) / 4);
+    }
+
+    &__number {
+      padding: 4px 10px;
+      font-weight: 400;
+    }
+    &__image {
+      margin: 0;
+      margin-top: 20px;
+    }
+    &__info {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &__sales {
+      margin-bottom: 0;
+      padding-right: 0;
     }
   }
 }

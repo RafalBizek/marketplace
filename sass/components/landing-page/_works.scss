@@ -21,7 +21,8 @@
     background-color: $bgAdditionalColor;
     border-radius: 20px;
   }
-  &__image, &__img {
+  &__image,
+  &__img {
     width: 100px;
     height: 100px;
     display: block;
@@ -47,12 +48,35 @@
       flex-direction: column;
       max-width: 210px;
     }
-    &__image, &__img {
+    &__image,
+    &__img {
       width: 160px;
       height: 160px;
     }
     &__details {
       text-align: center;
+    }
+  }
+  @include desktop {
+    &__title {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    &__subtitle {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+    &__card {
+      max-width: 330px;
+      align-items: center;
+    }
+    &__title-detail {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    &__details {
+      padding: 45px;
     }
   }
 }

@@ -25,8 +25,6 @@
   }
   &__card::after {
     content: '';
-    // width: 148px;
-    // height: 142px;
     min-width: 100%;
     min-height: 71%;
     display: block;
@@ -54,9 +52,26 @@
       text-transform: uppercase;
     }
   }
-  // @include tablet {
-  //   &__card::after {
-  //     width: 150px;
-  //   }
-  // }
+  @include desktop {
+     &__title {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    &__cards {
+      gap: $spaceGap;
+    }
+    &__card::after {
+      min-height: 76%;
+    }
+    &__icon {
+      top: 70px;
+      left: 70px;
+    }
+    &__subtitle {
+      font-size: 22px;
+      font-weight: 600;
+      padding: 20px 30px 25px 30px;
+    }
+  }
 }

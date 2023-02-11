@@ -18,9 +18,7 @@
   }
   &__subtitle {
     margin-bottom: 40px;
-    &::first-letter {
-      text-transform: uppercase;
-    }
+    text-transform: capitalize;
   }
   &__form {
     display: flex;
@@ -57,7 +55,6 @@
   }
   @include tablet {
     &__wrapper {
-      $spaceGap: 30px;
       display: flex;
       gap: $spaceGap;
       background-color: $bgAdditionalColor;
@@ -71,6 +68,32 @@
     &__img {
       margin-bottom: 0;
     }
- 
+  }
+  @include desktop {
+    &__wrapper {
+      max-width: 1050px;
+      padding: 60px;
+    }
+    &__title {
+      font-size: 38px;
+    }
+    &__subtitle {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+    &__form {
+      position: relative;
+    }
+    &__input {
+      width: 425px;
+      height: 60px;
+    }
+    &__btn {
+      width: 211px;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 215px;
+    }
   }
 }

@@ -1,4 +1,6 @@
 .footer {
+  background-color: $bgAdditionalColor;
+  padding-top: 40px;
   &__text {
     color: $fontColorFooter;
     margin-bottom: 20px;
@@ -95,6 +97,28 @@
       position: absolute;
       top: 2px;
       left: 242px;
+    }
+  }
+  @include desktop {
+    padding-left: 70px;
+    &__title {
+      font-size: 16px;
+    }
+    &__items {
+      display: flex;
+      
+    }
+    &__item:nth-child(1) {
+      width: 327px;
+    }
+    &__item:nth-child(2) {
+      width: 240px;
+    }
+    &__item:nth-child(3) {
+      width: 420px;
+    }
+    &__item:not(:last-child) {
+      margin-right: 31px;
     }
   }
 }

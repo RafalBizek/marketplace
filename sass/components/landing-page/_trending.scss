@@ -71,4 +71,19 @@
       gap: $spaceGap;
     }
   }
+  @include desktop {
+     &__title {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    &__subtitle {
+      max-width: 703px;
+      font-size: 22px;
+      line-height: 1.6;
+    }
+    &__card:nth-child(3) {
+      display: block;
+    }
+  }
 }

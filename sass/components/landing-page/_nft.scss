@@ -99,7 +99,6 @@
   @include tablet {
     .container {
       max-width: 834px;
-      height: auto;
     }
     &__wrapper {
       background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%),
@@ -125,6 +124,33 @@
     &__btn {
       display: inline-flex;
       margin-top: 0;
+    }
+  }
+  @include desktop {
+    .container {
+      max-width: 1280px;
+    }
+    &__wrapper {
+      background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%),
+        url('../images/nft-section/magic-mashrooms-desktop-1x.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 348px;
+      padding-bottom: 1px;
+    }
+    &__container {
+      max-width: 1050px;
+      // position: relative;
+      margin-left: 115px;
+      // margin-bottom: 60px;
+    }
+    &__title {
+      font-size: 51px;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+    &__timer {
+      left: 770px;
     }
   }
 }

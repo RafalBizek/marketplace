@@ -15,5 +15,36 @@
         cursor: pointer;
       }
     }
+    @include desktop {
+      padding: 10px 50px;
+      &__btn {
+        display: none;
+      }
+      &__items {
+        display: flex;
+        align-items: center;
+      }
+      &__item {
+        padding: 12px 20px 12px 20px;
+        font-weight: 600;
+      }
+      &__item:not(:last-child) {
+        margin-right: 10px;
+      }
+      &__link {
+        display: inline-block;
+        color: $fontColor;
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+      &__link--btn {
+        padding: 20px 30px 20px 30px;
+        background-color: $accentColor;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+      }
+    }
   }
 }
