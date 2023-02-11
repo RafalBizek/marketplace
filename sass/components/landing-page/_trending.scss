@@ -25,6 +25,10 @@
     border-radius: 24px;
     margin-bottom: 15px;
   }
+  &__image--size {
+    width: 97%;
+    height: auto;
+  }
   &__items {
     display: flex;
     align-items: flex-start;
