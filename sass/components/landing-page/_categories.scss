@@ -54,9 +54,9 @@
       text-transform: uppercase;
     }
   }
-  @include tablet {
-    &__card::after {
-      width: 150px;
-    }
-  }
+  // @include tablet {
+  //   &__card::after {
+  //     width: 150px;
+  //   }
+  // }
 }
