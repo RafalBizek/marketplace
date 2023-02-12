@@ -73,13 +73,37 @@
       display: flex;
     }
     &__container {
-        margin-top: 80px;
-        align-items: flex-start;
+      margin-top: 80px;
+      align-items: flex-start;
     }
     &__image,
     &__img {
       margin-right: 40px;
       margin-bottom: 0;
+    }
+  }
+  @include desktop {
+    .container {
+      max-width: 1280px;
+    }
+    &__image {
+        margin-right: 60px;
+        max-width: 610px;
+    }
+    &__container {
+        width: 610px;
+        margin-top: 100px;
+    }
+    &__title {
+        font-size: 51px;
+        line-height: 1.1;
+    }
+    &__subtitle {
+        font-size: 22px;
+        max-width: 460px;
+    }
+    &__input, &__btn {
+        width: 330px;
     }
   }
 }

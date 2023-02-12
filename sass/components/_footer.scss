@@ -1,6 +1,8 @@
 .footer {
   background-color: $bgAdditionalColor;
   padding-top: 40px;
+  max-width: 375px;
+  margin: 0 auto;
   &__text {
     color: $fontColorFooter;
     margin-bottom: 20px;
@@ -74,6 +76,7 @@
     padding-bottom: 40px;
   }
   @include tablet {
+    max-width: 834px;
     &__form {
       display: flex;
       align-items: flex-start;
@@ -98,7 +101,7 @@
     }
   }
   @include desktop {
-    // padding-left: 70px;
+    max-width: 1280px;
     &__title {
       font-size: 16px;
     }
