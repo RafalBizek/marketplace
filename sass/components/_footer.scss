@@ -24,9 +24,7 @@
     font-weight: 700;
     line-height: 1.6;
     margin-bottom: 20px;
-    &::first-letter {
-      text-transform: uppercase;
-    }
+    text-transform: capitalize;
   }
   &__link-menu {
     color: $fontColorFooter;
