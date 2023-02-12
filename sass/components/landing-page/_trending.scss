@@ -72,7 +72,11 @@
     }
   }
   @include desktop {
-     &__title {
+    &__headline {
+      width: 1050px;
+      margin: 0 auto;
+    }
+    &__title {
       font-size: 38px;
       font-weight: 600;
       line-height: 1.2;
@@ -81,6 +85,9 @@
       max-width: 703px;
       font-size: 22px;
       line-height: 1.6;
+    }
+    &__cards {
+      justify-content: center;
     }
     &__card:nth-child(3) {
       display: block;

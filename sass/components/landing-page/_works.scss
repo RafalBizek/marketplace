@@ -58,6 +58,10 @@
     }
   }
   @include desktop {
+     &__headline {
+      width: 1050px;
+      margin: 0 auto;
+    }
     &__title {
       font-size: 38px;
       font-weight: 600;
@@ -66,6 +70,9 @@
     &__subtitle {
       font-size: 22px;
       line-height: 1.6;
+    }
+      &__cards {
+      justify-content: center;
     }
     &__card {
       max-width: 330px;

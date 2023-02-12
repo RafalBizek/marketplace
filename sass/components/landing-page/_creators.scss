@@ -88,16 +88,17 @@
     margin-right: 12px;
   }
   @include tablet {
-    &__wrapper {
-      position: relative;
-    }
     &__subtitle {
       max-width: 343px;
+    }
+    &__container {
+      position: relative;
     }
     &__cards {
       display: flex;
       flex-wrap: wrap;
       gap: $spaceGap;
+      position: relative;
     }
     &__card {
       margin-bottom: 0;
@@ -109,13 +110,18 @@
       padding-right: 20px;
     }
     &__btn {
+      width: 231px;
       position: absolute;
-      top: 33px;
-      right: 45px;
+      top: -105px;
+      left: 410px;
       padding: 19px 40px 19px 40px;
     }
   }
   @include desktop {
+    &__headline {
+      width: 1050px;
+      margin: 0 auto;
+    }
     &__title {
       font-size: 38px;
       font-weight: 600;
@@ -127,7 +133,8 @@
       line-height: 1.6;
     }
     &__btn {
-      right: 130px;
+      top: -110px;
+      left: 934px;
     }
     &__card:nth-child(7),
     &__card:nth-child(8),
@@ -139,6 +146,7 @@
     }
     &__cards {
       gap: $spaceGap;
+      justify-content: center;
     }
     .creators__card {
       max-width: 240px;
@@ -147,7 +155,6 @@
       margin-bottom: 0;
       flex-basis: calc((100% - $spaceGap) / 4);
     }
-
     &__number {
       padding: 4px 10px;
       font-weight: 400;

@@ -100,13 +100,13 @@
     }
   }
   @include desktop {
-    padding-left: 70px;
+    // padding-left: 70px;
     &__title {
       font-size: 16px;
     }
     &__items {
       display: flex;
-      
+      justify-content: center;
     }
     &__item:nth-child(1) {
       width: 327px;
@@ -119,6 +119,11 @@
     }
     &__item:not(:last-child) {
       margin-right: 31px;
+    }
+    &__caption {
+      margin-left: 103px;
+      display: block;
+      width: 1060px;
     }
   }
 }

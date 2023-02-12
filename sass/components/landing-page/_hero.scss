@@ -84,6 +84,7 @@
     &__wrapper {
       flex-direction: row;
       flex-wrap: wrap;
+      position: relative;
     }
     &__container--left {
       max-width: 330px;
@@ -93,7 +94,9 @@
       display: flex;
     }
     &__container--bottom {
-      margin-top: -180px;
+      position: absolute;
+      top: 180px;
+      left: 10px;
     }
     &__subtitle {
       margin-bottom: 20px;
@@ -104,6 +107,9 @@
     }
   }
   @include desktop {
+    &__wrapper {
+      justify-content: center;
+    }
     &__title {
       font-size: 67px;
       line-height: 1.1;
@@ -117,10 +123,11 @@
       max-width: 510px;
       margin-right: 30px;
     }
-      &__container--bottom {
-      margin-top: -160px;
+    &__container--bottom {
+      top: 380px;
+      left: 110px;
     }
-     &__btn {
+    &__btn {
       max-width: 224px;
       padding: 19px 50px 19px 50px;
     }

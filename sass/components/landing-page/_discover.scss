@@ -109,6 +109,10 @@
     }
   }
   @include desktop {
+     &__headline {
+      width: 1050px;
+      margin: 0 auto;
+    }
     &__title {
       font-size: 38px;
       font-weight: 600;
@@ -120,6 +124,7 @@
     }
     &__cards {
       gap: $spaceGap;
+      justify-content: center;
     }
     &__card:nth-child(3) {
       display: block;
