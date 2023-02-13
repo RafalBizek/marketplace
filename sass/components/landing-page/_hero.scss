@@ -1,10 +1,16 @@
 .hero {
+  padding-bottom: 200px;
   &__wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   &__container {
     margin-bottom: 40px;
+  }
+  &__subcontainer {
+    position: absolute;
+    bottom: -160px;
   }
   &__title {
     font-size: 28px;
@@ -81,10 +87,10 @@
     text-transform: capitalize;
   }
   @include tablet {
+    padding-bottom: 0;
     &__wrapper {
       flex-direction: row;
       flex-wrap: wrap;
-      position: relative;
     }
     &__container--left {
       max-width: 330px;
@@ -93,17 +99,20 @@
     &__container--right {
       display: flex;
     }
-    &__container--bottom {
-      position: absolute;
+    &__subcontainer {
       top: 180px;
-      left: 10px;
+      left: 0;
     }
     &__subtitle {
       margin-bottom: 20px;
     }
     &__btn {
-      padding: 19px 50px 19px 82px;
+      width: 224px;
+      height: 60px;
+      padding: 0 50px 0 50px;
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
     }
   }
   @include desktop {
@@ -122,14 +131,21 @@
     &__container--left {
       max-width: 510px;
       margin-right: 30px;
+      position: relative;
     }
-    &__container--bottom {
+    &__subcontainer {
       top: 380px;
-      left: 110px;
+      left: 0;
     }
     &__btn {
-      max-width: 224px;
       padding: 19px 50px 19px 50px;
+    }
+    &__number {
+      font-size: 28px;
+    }
+    &__info {
+      font-size: 24px;
+      line-height: 1.59;
     }
   }
 }

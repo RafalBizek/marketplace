@@ -1,4 +1,6 @@
 .creators {
+  position: relative;
+  padding-bottom: 60px;
   &__title {
     font-size: 28px;
     line-height: 1.4;
@@ -82,17 +84,19 @@
     border-radius: 20px;
     padding: 19px 84px 19px 80px;
     display: flex;
+    position: absolute;
+    bottom: 0;
   }
   &__icon {
     fill: $accentColor;
     margin-right: 12px;
   }
   @include tablet {
+    &__headline {
+      position: relative;
+    }
     &__subtitle {
       max-width: 343px;
-    }
-    &__container {
-      position: relative;
     }
     &__cards {
       display: flex;
@@ -111,9 +115,10 @@
     }
     &__btn {
       width: 231px;
+      height: 60px;
       position: absolute;
-      top: -105px;
-      left: 410px;
+      top: 30px;
+      left: 415px;
       padding: 19px 40px 19px 40px;
     }
   }
@@ -133,8 +138,8 @@
       line-height: 1.6;
     }
     &__btn {
-      top: -110px;
-      left: 934px;
+      // top: -110px;
+      left: 820px;
     }
     &__card:nth-child(7),
     &__card:nth-child(8),

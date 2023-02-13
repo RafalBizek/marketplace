@@ -24,91 +24,131 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a href="index.html" class="nav__logo">
-          <svg class="nav__icon" width="32" height="32">
-            <use href="./images/icons.svg#icon-storefrontfooter"></use>
-          </svg>
-          <span class="uppercase">ntf m</span>arketplace</a
-        >
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a class="nav__link" href="">marketplace</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">rankings</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="wallet.html"
-              >connect <span class="lowercase">a w</span>allet</a
-            >
-          </li>
-          <li class="nav__item nav__item--btn">
-            <a class="nav__link nav__link--btn" href="account.html">
-              <svg class="nav__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-user"></use>
-              </svg>
-              sign up
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav__logo">
+            <svg class="nav__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-storefront"></use>
+            </svg>
+            <span class="uppercase">ntf m</span>arketplace</a
+          >
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="">marketplace</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">rankings</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="wallet.html"
+                >connect <span class="lowercase">a w</span>allet</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--btn" href="account.html">
+                <svg class="nav__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+                sign up
+              </a>
+            </li>
+          </ul>
+          <!-- mobile menu -->
+          <button
+            class="nav__btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <svg class="nav__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+          <!-- mobile menu -->
+        </nav>
+      </div>
     </header>
     <main>
       <section class="wallet">
-        <div class="wallet__wrapper">
-          <img
-            class="wallet__img"
-            src="images/wallet-page/spaceship-in-planet-orbit.jpg"
-            alt="spaceship"
-            width="610"
-            height="691"
-          />
-          <div class="wallet__container">
-            <h2 class="wallet__title">connect wallet</h2>
-            <p class="wallet__subtitle">
-              Choose a wallet you want to connect.<br />
-              There are several wallet providers.
-            </p>
-            <ul class="wallet__buttons">
-              <li class="wallet__button">
-                <button class="wallet__btn" type="button">
-                  <svg class="wallet__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-metamask"></use>
-                  </svg>
-                  <h5 class="wallet__btn-title">metamask</h5>
-                </button>
-              </li>
-              <li class="wallet__button">
-                <button class="wallet__btn" type="button">
-                  <svg class="wallet__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-walletconnect"></use>
-                  </svg>
-                  <h5 class="wallet__btn-title">wallet <span class="uppercase">c</span>onnect</h5>
-                </button>
-              </li>
-              <li class="wallet__button">
-                <button class="wallet__btn" type="button">
-                  <svg class="wallet__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-coinbase"></use>
-                  </svg>
-                  <h5 class="wallet__btn-title">coinbase</h5>
-                </button>
-              </li>
-            </ul>
+        <div class="container">
+          <div class="wallet__wrapper">
+            <picture class="account__image">
+              <source
+                media="screen and
+                (max-width: 768px)"
+                srcset="
+                  images/wallet-page/spaceship-in-planet-orbit-mobile@1x.jpg,
+                  images/wallet-page/spaceship-in-planet-orbit-mobile@2x.jpg 2x
+                "
+              />
+              <source
+                media="screen and
+                (max-width: 1200px)"
+                srcset="
+                  images/wallet-page/spaceship-in-planet-orbit-tablet@1x.jpg,
+                  images/wallet-page/spaceship-in-planet-orbit-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                srcset="
+                  images/wallet-page/spaceship-in-planet-orbit-desktop@1x.jpg,
+                  images/wallet-page/spaceship-in-planet-orbit-desktop@2x.jpg 2x
+                "
+              />
+              <img
+                class="wallet__img"
+                src="images/wallet-page/spaceship-in-planet-orbit.jpg"
+                alt="spaceship"
+                width="610"
+                height="691"
+              />
+            </picture>
+            <div class="wallet__container">
+              <h2 class="wallet__title">connect wallet</h2>
+              <p class="wallet__subtitle">
+                Choose a wallet you want to connect.<br />
+                There are several wallet providers.
+              </p>
+              <ul class="wallet__buttons">
+                <li class="wallet__button">
+                  <button class="wallet__btn" type="button">
+                    <svg class="wallet__icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-metamask"></use>
+                    </svg>
+                    <h5 class="wallet__btn-title">metamask</h5>
+                  </button>
+                </li>
+                <li class="wallet__button">
+                  <button class="wallet__btn" type="button">
+                    <svg class="wallet__icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-walletconnect"></use>
+                    </svg>
+                    <h5 class="wallet__btn-title">wallet <span class="uppercase">c</span>onnect</h5>
+                  </button>
+                </li>
+                <li class="wallet__button">
+                  <button class="wallet__btn" type="button">
+                    <svg class="wallet__icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-coinbase"></use>
+                    </svg>
+                    <h5 class="wallet__btn-title">coinbase</h5>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer footer--subpage">
+    <footer class="footer">
       <div class="container">
-        <ul class="footer__items footer__items--padding">
+        <ul class="footer__items">
           <li class="footer__item">
             <a class="footer__link-logo" href="index.html">
               <svg class="footer__icon-logo" width="32" height="32">
-                <use href="./images/icons.svg#icon-storefrontfooter"></use>
+                <use href="./images/icons.svg#icon-storefront"></use>
               </svg>
-              <p><span class="uppercase">nft</span> marketplace</p>
+              <p class="footer__logo"><span class="uppercase">nft</span> marketplace</p>
             </a>
             <p class="footer__text">
               <span class="uppercase">nft</span> marketplace
@@ -149,19 +189,23 @@
           </li>
           <li class="footer__item">
             <h5 class="footer__title">explore</h5>
-            <ul class="footer__items-menu">
-              <li class="footer__item-menu">
-                <a class="footer__link-menu" href="#"><span class="uppercase">m</span>arketplace</a>
-              </li>
-              <li class="footer__item-menu">
-                <a class="footer__link-menu" href="#"><span class="uppercase">r</span>ankings</a>
-              </li>
-              <li class="footer__item-menu">
-                <a class="footer__link-menu" href="wallet.html"
-                  ><span class="uppercase">c</span>onnect a wallet</a
-                >
-              </li>
-            </ul>
+            <nav>
+              <ul class="footer__items-menu">
+                <li class="footer__item-menu">
+                  <a class="footer__link-menu" href="#"
+                    ><span class="uppercase">m</span>arketplace</a
+                  >
+                </li>
+                <li class="footer__item-menu">
+                  <a class="footer__link-menu" href="#"><span class="uppercase">r</span>ankings</a>
+                </li>
+                <li class="footer__item-menu">
+                  <a class="footer__link-menu" href="wallet.html"
+                    ><span class="uppercase">c</span>onnect a wallet</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </li>
           <li class="footer__item">
             <h5 class="footer__title">join our weekly digest</h5>
@@ -174,6 +218,9 @@
                 placeholder="Enter your email here"
               />
               <button class="footer__form-btn" type="button">
+                <svg class="footer__icon-form" width="20" height="20">
+                  <use href="./images/icons.svg#icon-envelopesimple"></use>
+                </svg>
                 <span class="uppercase">s</span>ubscribe
               </button>
             </form>
@@ -185,5 +232,40 @@
         </p>
       </div>
     </footer>
+    <!-- mobile menu -->
+    <div class="mobile js-menu-container" id="mobile-menu">
+      <svg class="mobile__close-svg js-close-menu" width="40" height="40">
+        <use href="images/icons.svg#icon-close"></use>
+      </svg>
+      <nav class="mobile__nav">
+        <ul class="mobile__menu">
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="index.html">marketplace</a>
+          </li>
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#">rankings</a>
+          </li>
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#">connect a wallet</a>
+          </li>
+          <li class="mobile__menu-item">
+            <a class="mobile__menu-link mobile__menu-link--btn" href="account.html">
+              <svg class="mobile__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              sign up
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

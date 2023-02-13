@@ -1,4 +1,6 @@
 .discover {
+  position: relative;
+  padding-bottom: 160px;
   &__cards {
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +55,6 @@
       text-transform: uppercase;
     }
   }
-
   &__info-additional {
     display: flex;
     justify-content: space-between;
@@ -79,17 +80,19 @@
     text-transform: uppercase;
   }
   &__btn {
+    width: 315px;
+    height: 60px;
+    border: 2px solid $accentColor;
     color: $fontColor;
     font-weight: 600;
     text-transform: capitalize;
     border-radius: 20px;
-    padding: 20px 50px 20px 50px;
+    padding: 19px 84px 19px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid $accentColor;
-    padding: 20px 50px;
-    margin-top: 40px;
+    position: absolute;
+    bottom: 50px;
   }
   &__icon {
     margin-right: 12px;
@@ -98,18 +101,23 @@
     &__wrapper {
       position: relative;
     }
+    &__headline {
+      position: relative;
+    }
     &__card:nth-child(3) {
       display: none;
     }
     &__btn {
-      display: inline-flex;
+      display: flex;
       position: absolute;
-      top: -40px;
-      right: 40px;
+      width: 187px;
+      top: 0px;
+      left: 485px;
+      padding: 0px 32px 0 32px;
     }
   }
   @include desktop {
-     &__headline {
+    &__headline {
       width: 1050px;
       margin: 0 auto;
     }
@@ -130,7 +138,8 @@
       display: block;
     }
     &__btn {
-      right: 130px;
+      top: 20px;
+      left: 860px;
     }
   }
 }
